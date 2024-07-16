@@ -1,0 +1,2014 @@
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/account-utils/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-igp/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/access-control/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/serializable-account-meta/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/interchain-security-module-interface/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/mailbox/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/message-recipient-interface/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/ism/multisig-ism-message-id/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/ecdsa-signature/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/multisig-ism/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/test-utils/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/ism/test-ism/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/test-transaction-utils/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/validator-announce/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/hyperlane-sealevel-connection-client/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-token/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/hyperlane-sealevel-token/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-token-collateral/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-token-native/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-igp-test/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/mailbox-test/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/test-send-receiver/Cargo.toml
+workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+warning: virtual workspace defaulting to `resolver = "1"` despite one or more workspace members being on edition 2021 which implies `resolver = "2"`
+note: to keep the current resolver, specify `workspace.resolver = "1"` in the workspace root's manifest
+note: to use the edition 2021 resolver, specify `workspace.resolver = "2"` in the workspace root's manifest
+note: for more details see https://doc.rust-lang.org/cargo/reference/resolver.html#resolver-versions
+warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: dependency (futures) specified without providing a local path, Git repository, version, or workspace dependency to use. This will be considered an error in future versions
+warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: unused manifest key: dependencies.futures.worksapce
+warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: dependency (mockall) specified without providing a local path, Git repository, version, or workspace dependency to use. This will be considered an error in future versions
+warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: unused manifest key: dependencies.mockall.worksapce
+warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: dependency (solana-sdk) specified without providing a local path, Git repository, version, or workspace dependency to use. This will be considered an error in future versions
+warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: unused manifest key: dependencies.solana-sdk.worksapce
+warning: /home/coin1/projects/hyperlane-move/rust/utils/hex/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/programs/ism/multisig-ism-message-id/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-token-collateral/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-igp/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-core/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-igp-test/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/account-utils/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/programs/mailbox-test/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/hyperlane-sealevel-connection-client/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/programs/test-send-receiver/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/client/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/utils/run-locally/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/test-utils/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/hyperlane-sealevel-token/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/serializable-account-meta/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/chains/hyperlane-aptos/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/chains/hyperlane-fuel/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/test-transaction-utils/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/agents/scraper/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/programs/helloworld/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-token-native/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/chains/hyperlane-cosmos/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/Cargo.toml: unused manifest key: workspace.package.resolver
+warning: /home/coin1/projects/hyperlane-move/rust/Cargo.toml: unused manifest key: workspace.resolve
+warning: /home/coin1/projects/hyperlane-move/rust/utils/abigen/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/chains/hyperlane-sealevel/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/multisig-ism/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/programs/validator-announce/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/agents/relayer/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/movementlabsxyz-aptos-core/sdk/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/access-control/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/programs/ism/test-ism/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-test/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/agents/validator/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/chains/hyperlane-ethereum/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/message-recipient-interface/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/agents/scraper/migration/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/programs/mailbox/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/ecdsa-signature/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/ethers-prometheus/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/interchain-security-module-interface/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-token/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+warning: /home/coin1/projects/hyperlane-move/rust/utils/backtrace-oneline/Cargo.toml: the cargo feature `workspace-inheritance` has been stabilized in the 1.64 release and is no longer necessary to be listed in the manifest
+  See https://doc.rust-lang.org/cargo/reference/unstable.html#workspace-inheritance for more information about using this feature.
+    Blocking waiting for file lock on build directory
+warning: `&` without an explicit lifetime name cannot be used here
+  --> chains/hyperlane-cosmos/src/interchain_gas.rs:95:46
+   |
+95 |     const INTERCHAIN_GAS_PAYMENT_EVENT_TYPE: &str = "igp-core-pay-for-gas";
+   |                                              ^
+   |
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+   = note: for more information, see issue #115010 <https://github.com/rust-lang/rust/issues/115010>
+   = note: `#[warn(elided_lifetimes_in_associated_constant)]` on by default
+help: use the `'static` lifetime
+   |
+95 |     const INTERCHAIN_GAS_PAYMENT_EVENT_TYPE: &'static str = "igp-core-pay-for-gas";
+   |                                               +++++++
+
+warning: `&` without an explicit lifetime name cannot be used here
+   --> chains/hyperlane-cosmos/src/mailbox.rs:274:40
+    |
+274 |     const MESSAGE_DISPATCH_EVENT_TYPE: &str = "mailbox_dispatch";
+    |                                        ^
+    |
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+    = note: for more information, see issue #115010 <https://github.com/rust-lang/rust/issues/115010>
+help: use the `'static` lifetime
+    |
+274 |     const MESSAGE_DISPATCH_EVENT_TYPE: &'static str = "mailbox_dispatch";
+    |                                         +++++++
+
+warning: `&` without an explicit lifetime name cannot be used here
+   --> chains/hyperlane-cosmos/src/merkle_tree_hook.rs:199:45
+    |
+199 |     const MERKLE_TREE_INSERTION_EVENT_TYPE: &str = "hpl_hook_merkle::post_dispatch";
+    |                                             ^
+    |
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+    = note: for more information, see issue #115010 <https://github.com/rust-lang/rust/issues/115010>
+help: use the `'static` lifetime
+    |
+199 |     const MERKLE_TREE_INSERTION_EVENT_TYPE: &'static str = "hpl_hook_merkle::post_dispatch";
+    |                                              +++++++
+
+warning: `&` without an explicit lifetime name cannot be used here
+  --> chains/hyperlane-cosmos/src/providers/rpc.rs:67:22
+   |
+67 |     const WASM_TYPE: &str = "wasm";
+   |                      ^
+   |
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+   = note: for more information, see issue #115010 <https://github.com/rust-lang/rust/issues/115010>
+help: use the `'static` lifetime
+   |
+67 |     const WASM_TYPE: &'static str = "wasm";
+   |                       +++++++
+
+warning: unused imports: `trait_builder::*`, `validator_announce::*`
+  --> chains/hyperlane-cosmos/src/lib.rs:29:23
+   |
+29 |     trait_builder::*, trait_builder::*, validator_announce::*, validator_announce::*,
+   |                       ^^^^^^^^^^^^^^^^                         ^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `protobuf::Message`
+  --> chains/hyperlane-cosmos/src/providers/grpc.rs:33:5
+   |
+33 | use protobuf::Message;
+   |     ^^^^^^^^^^^^^^^^^
+
+warning: `hyperlane-cosmos` (lib) generated 6 warnings (run `cargo fix --lib -p hyperlane-cosmos` to apply 5 suggestions)
+warning: unused imports: `SOL_MESSAGES_EXPECTED`, `aptos::*`, `termination_invariants_met`
+  --> utils/run-locally/src/main.rs:34:18
+   |
+34 |     invariants::{termination_invariants_met, SOL_MESSAGES_EXPECTED},
+   |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^^^^^
+...
+37 |     aptos::*,
+   |     ^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `Command`, `Stdio`
+ --> utils/run-locally/src/aptos.rs:1:20
+  |
+1 | use std::process::{Command, Stdio};
+  |                    ^^^^^^^  ^^^^^
+
+warning: unused imports: `ArbitraryData`, `concat_path`
+ --> utils/run-locally/src/aptos.rs:7:29
+  |
+7 | use crate::utils::{as_task, concat_path, AgentHandles, ArbitraryData, TaskHandle};
+  |                             ^^^^^^^^^^^                ^^^^^^^^^^^^^
+
+warning: unused import: `NamedTempFile`
+  --> utils/run-locally/src/aptos.rs:10:25
+   |
+10 | use tempfile::{tempdir, NamedTempFile};
+   |                         ^^^^^^^^^^^^^
+
+warning: unreachable statement
+  --> utils/run-locally/src/invariants.rs:55:5
+   |
+53 |       return Ok(true);
+   |       --------------- any code following this expression is unreachable
+54 |
+55 | /     let gas_payment_events_count = fetch_metric(
+56 | |         "9092",
+57 | |         "hyperlane_contract_sync_stored_events",
+58 | |         &hashmap! {"data_type" => "gas_payments"},
+59 | |     )?
+60 | |     .iter()
+61 | |     .sum::<u32>();
+   | |__________________^ unreachable statement
+   |
+   = note: `#[warn(unreachable_code)]` on by default
+
+warning: unused variable: `starting_relayer_balance`
+  --> utils/run-locally/src/invariants.rs:22:5
+   |
+22 |     starting_relayer_balance: f64,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_starting_relayer_balance`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `solana_cli_tools_path`
+  --> utils/run-locally/src/invariants.rs:23:5
+   |
+23 |     solana_cli_tools_path: &Path,
+   |     ^^^^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_solana_cli_tools_path`
+
+warning: unused variable: `solana_config_path`
+  --> utils/run-locally/src/invariants.rs:24:5
+   |
+24 |     solana_config_path: &Path,
+   |     ^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_solana_config_path`
+
+warning: unused variable: `scraper_env`
+   --> utils/run-locally/src/main.rs:290:9
+    |
+290 |     let scraper_env = common_agent_env
+    |         ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_scraper_env`
+
+warning: unused variable: `start_anvil`
+   --> utils/run-locally/src/main.rs:347:9
+    |
+347 |     let start_anvil = start_anvil(config.clone());
+    |         ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_start_anvil`
+
+warning: unused variable: `solana_program_path`
+   --> utils/run-locally/src/main.rs:349:9
+    |
+349 |     let solana_program_path = solana_program_builder.join();
+    |         ^^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_solana_program_path`
+
+warning: unused variable: `kathy_env_single_insertion`
+   --> utils/run-locally/src/main.rs:389:9
+    |
+389 |     let kathy_env_single_insertion = Program::new("yarn")
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_kathy_env_single_insertion`
+
+warning: unused variable: `kathy_env_zero_insertion`
+   --> utils/run-locally/src/main.rs:396:9
+    |
+396 |     let kathy_env_zero_insertion = Program::new("yarn")
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_kathy_env_zero_insertion`
+
+warning: unused variable: `kathy_env_double_insertion`
+   --> utils/run-locally/src/main.rs:409:9
+    |
+409 |     let kathy_env_double_insertion = Program::new("yarn")
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_kathy_env_double_insertion`
+
+warning: unused variable: `loop_start`
+   --> utils/run-locally/src/main.rs:449:9
+    |
+449 |     let loop_start = Instant::now();
+    |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_loop_start`
+
+warning: unused variable: `starting_relayer_balance`
+   --> utils/run-locally/src/main.rs:453:9
+    |
+453 |     let starting_relayer_balance: f64 = agent_balance_sum(9092).unwrap();
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_starting_relayer_balance`
+
+warning: constant `SOL_MESSAGES_EXPECTED` is never used
+  --> utils/run-locally/src/invariants.rs:15:11
+   |
+15 | pub const SOL_MESSAGES_EXPECTED: u32 = 20;
+   |           ^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: constant `APTOS_MESSAGES_EXPECTED` is never used
+  --> utils/run-locally/src/invariants.rs:16:11
+   |
+16 | pub const APTOS_MESSAGES_EXPECTED: u32 = 20;
+   |           ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `termination_invariants_met` is never used
+  --> utils/run-locally/src/invariants.rs:20:8
+   |
+20 | pub fn termination_invariants_met(
+   |        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `run-locally` (bin "run-locally") generated 19 warnings (run `cargo fix --bin "run-locally"` to apply 15 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 3m 16s
+     Running `target/debug/run-locally`
+<E2E> Signed checkpoints in /tmp/.tmp92yzDU, /tmp/test_sealevel_checkpoints_0x70997970c51812dc3a010c7d01b50e0d17dc79c8
+<E2E> Relayer DB in /tmp/.tmpD4VKL5/relayer
+<E2E> Validator 1 DB in /tmp/.tmpD4VKL5/validator0
+<E2E> Validator 2 DB in /tmp/.tmpD4VKL5/validator1
+<E2E> Installing Aptos CLI
+<E2E> (/tmp/.tmpLmoziM)$ /usr/bin/curl --location --silent --output install_aptos_cli.py https://aptos.dev/scripts/install_cli.py
+<E2E> (/tmp/.tmpLmoziM)$ /usr/bin/python3 install_aptos_cli.py
+<python3> Couldn't find distutils or packaging. We cannot check the current version of the CLI. We will install the latest version.
+<python3> Latest CLI release: 3.5.0
+<python3> Currently installed CLI: 3.5.0
+<python3> Installing 3.5.0
+<python3> Determined target to be: Ubuntu-22.04-x86_64
+<python3> 
+<python3> Welcome to the Aptos CLI installer!
+<python3> 
+<python3> This will download and install the latest version of the Aptos CLI at this location:
+<python3> 
+<python3> /home/coin1/.local/bin
+<python3> 
+<python3> Installing Aptos CLI (3.5.0): Downloading...
+<python3> Installing Aptos CLI (3.5.0): Done!
+<python3> 
+<python3> The Aptos CLI (3.5.0) is installed now. Great!
+<python3> 
+<python3> To get started you need the Aptos CLI's bin directory (/home/coin1/.local/bin) in your `PATH`
+<python3> environment variable.
+<python3> 
+<python3> Add the following to your shell configuration file (e.g. .bashrc):
+<python3> 
+<python3> export PATH="/home/coin1/.local/bin:$PATH"
+<python3> 
+<python3> After this, restart your terminal.
+<python3> 
+<python3> Alternatively, you can call the Aptos CLI explicitly with `/home/coin1/.local/bin/aptos`.
+<python3> 
+<python3> You can test that everything is set up by executing:
+<python3> 
+<python3> aptos info
+<python3> 
+<E2E> Running Aptos Local Testnet
+<E2E> Spawning /home/coin1/.local/bin/aptos...
+<APTOS-NODE> 
+<APTOS-NODE> 
+<APTOS-NODE> Readiness endpoint: http://127.0.0.1:8070/
+<APTOS-NODE> 
+<APTOS-NODE> Node API is starting, please wait...
+<APTOS-NODE> Faucet is starting, please wait...
+<APTOS-NODE> Transaction stream is starting, please wait...
+<APTOS-NODE> 
+<APTOS-NODE> Completed generating configuration:
+<APTOS-NODE> 	Log file: "/home/coin1/.aptos/testnet/validator.log"
+<APTOS-NODE> 	Test dir: "/home/coin1/.aptos/testnet"
+<APTOS-NODE> 	Aptos root key path: "/home/coin1/.aptos/testnet/mint.key"
+<APTOS-NODE> 	Waypoint: 0:708c0ba9065373996165e0c34c77ef046ce9219bef0f612f2554d55908316a93
+<APTOS-NODE> 	ChainId: 4
+<APTOS-NODE> 	REST API endpoint: http://127.0.0.1:8080
+<APTOS-NODE> 	Metrics endpoint: http://127.0.0.1:9101/metrics
+<APTOS-NODE> 	Aptosnet fullnode network endpoint: /ip4/0.0.0.0/tcp/6181
+<APTOS-NODE> 	Indexer gRPC node stream endpoint: 127.0.0.1:50051
+<APTOS-NODE> 
+<APTOS-NODE> Aptos is running, press ctrl-c to exit
+<APTOS-NODE> 
+<APTOS-NODE> Node API is ready. Endpoint: http://127.0.0.1:8080/
+<APTOS-NODE> Transaction stream is ready. Endpoint: http://127.0.0.1:50051/
+<APTOS-NODE> Faucet is ready. Endpoint: http://127.0.0.1:8081/
+<APTOS-NODE> 
+<APTOS-NODE> Applying post startup steps...
+<APTOS-NODE> 
+<APTOS-NODE> Setup is complete, you can now use the localnet!
+<E2E> (../move/e2e/)$ /usr/bin/bash compile-and-deploy.sh
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xe818394d0f37cd6accd369cdd4e723c8dc4f9b8d2517264fec3d9e8cabc66541"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneLibrary
+<bash> package size 13733 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/e2ff46bd
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0xe2ff46bd30aeeb00e34234b7c7f1cf2028221a417392895936930f4ff6ec6961",
+<bash>     "gas_used": 8132,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "e818394d0f37cd6accd369cdd4e723c8dc4f9b8d2517264fec3d9e8cabc66541",
+<bash>     "sequence_number": 0,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112098526777,
+<bash>     "version": 40,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xa4a4eb4bab83650ba62cabe9ce429ad021b29c12f2fbf808768838255c7e191d"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneValidatorAnnounce
+<bash> [0m[1m[38;5;11mwarning[W09002][0m[1m: unused variable[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/validator-announce/sources/announce.move:58:5
+<bash>    [0m[34m│[0m
+<bash> [0m[34m58[0m [0m[34m│[0m     [0m[33maccount[0m: &signer,
+<bash>    [0m[34m│[0m     [0m[33m^^^^^^^[0m [0m[33mUnused parameter 'account'. Consider removing or prefixing with an underscore: '_account'[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused variable[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/validator-announce/sources/announce.move:58:5
+<bash>    [0m[34m│[0m
+<bash> [0m[34m58[0m [0m[34m│[0m     [0m[33maccount[0m: &signer,
+<bash>    [0m[34m│[0m     [0m[33m^^^^^^^[0m [0m[33mUnused parameter 'account'. Consider removing or prefixing with an underscore: '_account'[0m
+<bash> 
+<bash> package size 5495 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/912a7e21
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x912a7e2195965ff230a5f850f0686251055e225da452c0b4ff215cca7a2c9c5b",
+<bash>     "gas_used": 4019,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "a4a4eb4bab83650ba62cabe9ce429ad021b29c12f2fbf808768838255c7e191d",
+<bash>     "sequence_number": 0,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112104533051,
+<bash>     "version": 58,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0x6bbae7820a27ff21f28ba5a4b64c8b746cdd95e2b3264a686dd15651ef90a2a1"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneISM
+<bash> [0m[1m[38;5;11mwarning[W09003][0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> package size 4148 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/26a958f3
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x26a958f3e52cf7bd8c0a0931866c0f30dfe5a1cd56ed5681caa7a00a629a9a50",
+<bash>     "gas_used": 3447,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "6bbae7820a27ff21f28ba5a4b64c8b746cdd95e2b3264a686dd15651ef90a2a1",
+<bash>     "sequence_number": 0,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112109492463,
+<bash>     "version": 76,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xc5cb1f1ce6951226e9c46ce8d42eda1ac9774a0fef91e2910939119ef0c95568"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneIGP
+<bash> package size 7011 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/045506b8
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x045506b8dcd8915009c61e9b0e15ebd7f3f6a0c0d5615ccf65b936cee9ce3b71",
+<bash>     "gas_used": 5542,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "c5cb1f1ce6951226e9c46ce8d42eda1ac9774a0fef91e2910939119ef0c95568",
+<bash>     "sequence_number": 0,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112114360752,
+<bash>     "version": 92,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xafce3ab5dc5d513c13e746cef4d65bf54f4abdcb34ea8ab0728d01c035610e3d"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneRouter
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> package size 5487 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/e3cb6c15
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0xe3cb6c15b73a07431c1276df0f3467f54dfb28d6334bff4efeac38a0d2974e20",
+<bash>     "gas_used": 3973,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "afce3ab5dc5d513c13e746cef4d65bf54f4abdcb34ea8ab0728d01c035610e3d",
+<bash>     "sequence_number": 0,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112120497053,
+<bash>     "version": 110,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0x476307c25c54b76b331a4e3422ae293ada422f5455efed1553cf4de1222a108f"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneIGP
+<bash> INCLUDING DEPENDENCY HyperlaneISM
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY HyperlaneRouter
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneMailBox
+<bash> [0m[1m[38;5;11mwarning[W09003][0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/mailbox/../isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/mailbox/../router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/mailbox/../router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> package size 6878 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/2fef544a
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x2fef544a61f4367e27f595af649cb2cbd0012401b4b48f6ff434ec8b9b00e0db",
+<bash>     "gas_used": 5015,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "476307c25c54b76b331a4e3422ae293ada422f5455efed1553cf4de1222a108f",
+<bash>     "sequence_number": 0,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112125776559,
+<bash>     "version": 128,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xd1eaef049ac77e63f2ffefae43e14c1a73700f25cde849b6614dc3f3580123fc"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneIGP
+<bash> INCLUDING DEPENDENCY HyperlaneISM
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY HyperlaneMailBox
+<bash> INCLUDING DEPENDENCY HyperlaneRouter
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING examples
+<bash> [0m[1m[38;5;11mwarning[W09003][0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/examples/../isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/examples/../mailbox/../router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/examples/../mailbox/../router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> package size 2374 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/110813a6
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x110813a61b1f63a020016c4bf9703954573ce709553ed48c57f2781e81e2c733",
+<bash>     "gas_used": 2375,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "d1eaef049ac77e63f2ffefae43e14c1a73700f25cde849b6614dc3f3580123fc",
+<bash>     "sequence_number": 0,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112133995993,
+<bash>     "version": 150,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xc29e4ea7972150a5f3bd6531eba94907ce2be3b47eb17eaee40d381d2fd9122c"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneLibrary
+<bash> package size 13733 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/0b4bcbcf
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x0b4bcbcf9bd46cc8e1de33b77a68ed3de96805811d9d42d9e096381ddcba1577",
+<bash>     "gas_used": 8132,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "c29e4ea7972150a5f3bd6531eba94907ce2be3b47eb17eaee40d381d2fd9122c",
+<bash>     "sequence_number": 0,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112137196138,
+<bash>     "version": 164,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xce1f65297828eaa6e460724a869317154f05cdde26619c0e5c0ca23aac3f69c7"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneValidatorAnnounce
+<bash> [0m[1m[38;5;11mwarning[W09002][0m[1m: unused variable[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/validator-announce/sources/announce.move:58:5
+<bash>    [0m[34m│[0m
+<bash> [0m[34m58[0m [0m[34m│[0m     [0m[33maccount[0m: &signer,
+<bash>    [0m[34m│[0m     [0m[33m^^^^^^^[0m [0m[33mUnused parameter 'account'. Consider removing or prefixing with an underscore: '_account'[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused variable[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/validator-announce/sources/announce.move:58:5
+<bash>    [0m[34m│[0m
+<bash> [0m[34m58[0m [0m[34m│[0m     [0m[33maccount[0m: &signer,
+<bash>    [0m[34m│[0m     [0m[33m^^^^^^^[0m [0m[33mUnused parameter 'account'. Consider removing or prefixing with an underscore: '_account'[0m
+<bash> 
+<bash> package size 5495 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/e011761a
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0xe011761aad15a7d00d3c1d0a362d2eccb8795fdfb085ef25fa3859fc27eb3ee1",
+<bash>     "gas_used": 4019,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "ce1f65297828eaa6e460724a869317154f05cdde26619c0e5c0ca23aac3f69c7",
+<bash>     "sequence_number": 0,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112143391924,
+<bash>     "version": 182,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0x39a36a558e955f29f60f9e7ad7e391510fcd6a744d8aec9b86952106bfc3e5e2"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneISM
+<bash> [0m[1m[38;5;11mwarning[W09003][0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> package size 4148 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/022f46f9
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x022f46f979bc1ddbfb5cf0a2ec2e7cc7d3d9075add8b51df2bfe816c46719ae7",
+<bash>     "gas_used": 3447,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "39a36a558e955f29f60f9e7ad7e391510fcd6a744d8aec9b86952106bfc3e5e2",
+<bash>     "sequence_number": 0,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112148363561,
+<bash>     "version": 200,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xea7d568d0705450331a8f09fd1c823faec91f4ef1c7e6ed4b12c0c53d0c08bc8"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneIGP
+<bash> package size 7011 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/95e1f3ac
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x95e1f3ac50bcc38835751865a8c1c4eeaf45c45c14e8e39c492840f64ba2c1e6",
+<bash>     "gas_used": 5542,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "ea7d568d0705450331a8f09fd1c823faec91f4ef1c7e6ed4b12c0c53d0c08bc8",
+<bash>     "sequence_number": 0,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112156560146,
+<bash>     "version": 222,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xd85669f567da6d24d296dccb7a7bfa1c666530eeb0e7b294791094e7a2dce8e3"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneRouter
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> package size 5487 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/4009b3cd
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x4009b3cdbb8bcc5d295b47fc3cc3f7f6595627dea7bcb4324863336e089e72fb",
+<bash>     "gas_used": 3973,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "d85669f567da6d24d296dccb7a7bfa1c666530eeb0e7b294791094e7a2dce8e3",
+<bash>     "sequence_number": 0,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112161708872,
+<bash>     "version": 240,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xd338e68ca12527e77cab474ee8ec91ffa4e6512ced9ae8f47e28c5c7c4804b78"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneIGP
+<bash> INCLUDING DEPENDENCY HyperlaneISM
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY HyperlaneRouter
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneMailBox
+<bash> [0m[1m[38;5;11mwarning[W09003][0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/mailbox/../isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/mailbox/../router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/mailbox/../router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> package size 6878 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/dbbacfc6
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0xdbbacfc6622404a50e8e8fd26f3954f5ea9f34da77b8d47aa0bd33201f4ce949",
+<bash>     "gas_used": 5015,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "d338e68ca12527e77cab474ee8ec91ffa4e6512ced9ae8f47e28c5c7c4804b78",
+<bash>     "sequence_number": 0,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112168511970,
+<bash>     "version": 262,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xb2586f8d1347b988157b9e7aaea24d19064dfb596835145db1f93ff931948732"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneIGP
+<bash> INCLUDING DEPENDENCY HyperlaneISM
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY HyperlaneMailBox
+<bash> INCLUDING DEPENDENCY HyperlaneRouter
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING examples
+<bash> [0m[1m[38;5;11mwarning[W09003][0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/examples/../isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/examples/../mailbox/../router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/examples/../mailbox/../router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> package size 2374 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/d6e83fa4
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0xd6e83fa4091faf2fedab8b87ed2c703e4c0d25e692bd7ffce26f72e2b65799da",
+<bash>     "gas_used": 2375,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "b2586f8d1347b988157b9e7aaea24d19064dfb596835145db1f93ff931948732",
+<bash>     "sequence_number": 0,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112176677081,
+<bash>     "version": 284,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0x21779477148b80ec9e123cc087a04ebbfb4a9de0ba64aa8f31510a0266423bb9"
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0x8b4376073a408ece791f4adc34a8afdde405bae071711dcbb95ca4e5d4f26c93"
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xef7adb55757d157d1a1f76d5d04806aba4f9099a32260b9356d6dd53c177cd1e"
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xcc7867910e0c3a1b8f304255123a4459c0222c78987d628f1effbf122f436b7b"
+<bash> }
+<E2E> (../move/e2e/)$ /usr/bin/bash compile-and-deploy.sh
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xe818394d0f37cd6accd369cdd4e723c8dc4f9b8d2517264fec3d9e8cabc66541"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneLibrary
+<bash> package size 13733 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/d72b1166
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0xd72b1166376d1c3ba4580f612a3716a54b4dc462695402e22ddd910dacbf5ae8",
+<bash>     "gas_used": 88,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "e818394d0f37cd6accd369cdd4e723c8dc4f9b8d2517264fec3d9e8cabc66541",
+<bash>     "sequence_number": 1,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112184077304,
+<bash>     "version": 320,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xa4a4eb4bab83650ba62cabe9ce429ad021b29c12f2fbf808768838255c7e191d"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneValidatorAnnounce
+<bash> [0m[1m[38;5;11mwarning[W09002][0m[1m: unused variable[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/validator-announce/sources/announce.move:58:5
+<bash>    [0m[34m│[0m
+<bash> [0m[34m58[0m [0m[34m│[0m     [0m[33maccount[0m: &signer,
+<bash>    [0m[34m│[0m     [0m[33m^^^^^^^[0m [0m[33mUnused parameter 'account'. Consider removing or prefixing with an underscore: '_account'[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused variable[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/validator-announce/sources/announce.move:58:5
+<bash>    [0m[34m│[0m
+<bash> [0m[34m58[0m [0m[34m│[0m     [0m[33maccount[0m: &signer,
+<bash>    [0m[34m│[0m     [0m[33m^^^^^^^[0m [0m[33mUnused parameter 'account'. Consider removing or prefixing with an underscore: '_account'[0m
+<bash> 
+<bash> package size 5495 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/592d26b4
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x592d26b435ebd609c513e5f88e6495f2230aeb6c97cb9e48ff6e080a27ce9c1b",
+<bash>     "gas_used": 77,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "a4a4eb4bab83650ba62cabe9ce429ad021b29c12f2fbf808768838255c7e191d",
+<bash>     "sequence_number": 1,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112191345751,
+<bash>     "version": 340,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0x6bbae7820a27ff21f28ba5a4b64c8b746cdd95e2b3264a686dd15651ef90a2a1"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneISM
+<bash> [0m[1m[38;5;11mwarning[W09003][0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> package size 4148 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/4be697e5
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x4be697e55db999edf27b403405f41abd93ce6e4e4f5114f1a1111a3bcccc1b3b",
+<bash>     "gas_used": 75,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "6bbae7820a27ff21f28ba5a4b64c8b746cdd95e2b3264a686dd15651ef90a2a1",
+<bash>     "sequence_number": 1,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112195802186,
+<bash>     "version": 356,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xc5cb1f1ce6951226e9c46ce8d42eda1ac9774a0fef91e2910939119ef0c95568"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneIGP
+<bash> package size 7011 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/2c66e2b4
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x2c66e2b43d438283c4b561a8b8d919cbc6f5f3e459a01b38f2663c493cf160c6",
+<bash>     "gas_used": 79,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "c5cb1f1ce6951226e9c46ce8d42eda1ac9774a0fef91e2910939119ef0c95568",
+<bash>     "sequence_number": 1,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112201909856,
+<bash>     "version": 374,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xafce3ab5dc5d513c13e746cef4d65bf54f4abdcb34ea8ab0728d01c035610e3d"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneRouter
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> package size 5487 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/ef0edcad
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0xef0edcad5ba1a59f2ee986e1a9047b1ddfa5aa5d0187787d9f9a8d57c9e119ed",
+<bash>     "gas_used": 77,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "afce3ab5dc5d513c13e746cef4d65bf54f4abdcb34ea8ab0728d01c035610e3d",
+<bash>     "sequence_number": 1,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112207666845,
+<bash>     "version": 392,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0x476307c25c54b76b331a4e3422ae293ada422f5455efed1553cf4de1222a108f"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneIGP
+<bash> INCLUDING DEPENDENCY HyperlaneISM
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY HyperlaneRouter
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneMailBox
+<bash> [0m[1m[38;5;11mwarning[W09003][0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/mailbox/../isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/mailbox/../router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/mailbox/../router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> package size 6878 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/54295fd5
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x54295fd5fc92f5c1efb2dd309495dbec7f8c6c1d6b120c7a74e13e907b477baa",
+<bash>     "gas_used": 84,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "476307c25c54b76b331a4e3422ae293ada422f5455efed1553cf4de1222a108f",
+<bash>     "sequence_number": 1,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112212968375,
+<bash>     "version": 410,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xd1eaef049ac77e63f2ffefae43e14c1a73700f25cde849b6614dc3f3580123fc"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneIGP
+<bash> INCLUDING DEPENDENCY HyperlaneISM
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY HyperlaneMailBox
+<bash> INCLUDING DEPENDENCY HyperlaneRouter
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING examples
+<bash> [0m[1m[38;5;11mwarning[W09003][0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/examples/../isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/examples/../mailbox/../router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/examples/../mailbox/../router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> package size 2374 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/372bb8d8
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x372bb8d8eb14bddce86198c67acf8eba43e70d8c1873878eebbe3ad55142c479",
+<bash>     "gas_used": 78,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "d1eaef049ac77e63f2ffefae43e14c1a73700f25cde849b6614dc3f3580123fc",
+<bash>     "sequence_number": 1,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112220320529,
+<bash>     "version": 426,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xc29e4ea7972150a5f3bd6531eba94907ce2be3b47eb17eaee40d381d2fd9122c"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneLibrary
+<bash> package size 13733 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/4d46b1b7
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x4d46b1b76c96be9e9deff75ae58aeb928c9309c5572efd793b3e2552e2622cb8",
+<bash>     "gas_used": 88,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "c29e4ea7972150a5f3bd6531eba94907ce2be3b47eb17eaee40d381d2fd9122c",
+<bash>     "sequence_number": 1,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112224268024,
+<bash>     "version": 440,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xce1f65297828eaa6e460724a869317154f05cdde26619c0e5c0ca23aac3f69c7"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneValidatorAnnounce
+<bash> [0m[1m[38;5;11mwarning[W09002][0m[1m: unused variable[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/validator-announce/sources/announce.move:58:5
+<bash>    [0m[34m│[0m
+<bash> [0m[34m58[0m [0m[34m│[0m     [0m[33maccount[0m: &signer,
+<bash>    [0m[34m│[0m     [0m[33m^^^^^^^[0m [0m[33mUnused parameter 'account'. Consider removing or prefixing with an underscore: '_account'[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused variable[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/validator-announce/sources/announce.move:58:5
+<bash>    [0m[34m│[0m
+<bash> [0m[34m58[0m [0m[34m│[0m     [0m[33maccount[0m: &signer,
+<bash>    [0m[34m│[0m     [0m[33m^^^^^^^[0m [0m[33mUnused parameter 'account'. Consider removing or prefixing with an underscore: '_account'[0m
+<bash> 
+<bash> package size 5495 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/709cc0b9
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x709cc0b946a879e0c5dfdd5ac1a01882d2c131c921e8c1d94d09d1ba0dd2e221",
+<bash>     "gas_used": 77,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "ce1f65297828eaa6e460724a869317154f05cdde26619c0e5c0ca23aac3f69c7",
+<bash>     "sequence_number": 1,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112229392118,
+<bash>     "version": 458,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0x39a36a558e955f29f60f9e7ad7e391510fcd6a744d8aec9b86952106bfc3e5e2"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneISM
+<bash> [0m[1m[38;5;11mwarning[W09003][0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> package size 4148 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/69e91490
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x69e91490b5354d3b8d942a44533092edb42da200efc85ed7d1b52b60d0f97bf0",
+<bash>     "gas_used": 75,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "39a36a558e955f29f60f9e7ad7e391510fcd6a744d8aec9b86952106bfc3e5e2",
+<bash>     "sequence_number": 1,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112234397863,
+<bash>     "version": 474,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xea7d568d0705450331a8f09fd1c823faec91f4ef1c7e6ed4b12c0c53d0c08bc8"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneIGP
+<bash> package size 7011 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/9eeecac2
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x9eeecac251255c523a10ed5612616da64e4e0699e0267eee3167acc26136fb0e",
+<bash>     "gas_used": 79,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "ea7d568d0705450331a8f09fd1c823faec91f4ef1c7e6ed4b12c0c53d0c08bc8",
+<bash>     "sequence_number": 1,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112238984920,
+<bash>     "version": 490,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xd85669f567da6d24d296dccb7a7bfa1c666530eeb0e7b294791094e7a2dce8e3"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneRouter
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> package size 5487 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/1226755e
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x1226755ead52d85060bef3d177e77c72eef498512673b28c150c7d6c1ef2d2a5",
+<bash>     "gas_used": 77,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "d85669f567da6d24d296dccb7a7bfa1c666530eeb0e7b294791094e7a2dce8e3",
+<bash>     "sequence_number": 1,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112246600936,
+<bash>     "version": 512,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xd338e68ca12527e77cab474ee8ec91ffa4e6512ced9ae8f47e28c5c7c4804b78"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneIGP
+<bash> INCLUDING DEPENDENCY HyperlaneISM
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY HyperlaneRouter
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING HyperlaneMailBox
+<bash> [0m[1m[38;5;11mwarning[W09003][0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/mailbox/../isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/mailbox/../router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/mailbox/../router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> package size 6878 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/714b06dd
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x714b06dd924b16de67c3923f76b68d77ea1a68c723f7fe44504abea77b982304",
+<bash>     "gas_used": 84,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "d338e68ca12527e77cab474ee8ec91ffa4e6512ced9ae8f47e28c5c7c4804b78",
+<bash>     "sequence_number": 1,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112253661372,
+<bash>     "version": 534,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xb2586f8d1347b988157b9e7aaea24d19064dfb596835145db1f93ff931948732"
+<bash> }
+<bash> Compiling, may take a little while to download git dependencies...
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> UPDATING GIT DEPENDENCY https://github.com/aptos-labs/aptos-core.git
+<bash> INCLUDING DEPENDENCY AptosFramework
+<bash> INCLUDING DEPENDENCY AptosStdlib
+<bash> INCLUDING DEPENDENCY HyperlaneIGP
+<bash> INCLUDING DEPENDENCY HyperlaneISM
+<bash> INCLUDING DEPENDENCY HyperlaneLibrary
+<bash> INCLUDING DEPENDENCY HyperlaneMailBox
+<bash> INCLUDING DEPENDENCY HyperlaneRouter
+<bash> INCLUDING DEPENDENCY MoveStdlib
+<bash> BUILDING examples
+<bash> [0m[1m[38;5;11mwarning[W09003][0m[1m: unused assignment[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/examples/../isms/sources/multisig_ism.move:92:9
+<bash>    [0m[34m│[0m
+<bash> [0m[34m92[0m [0m[34m│[0m     let [0m[33mmerkle_index[0m = ism_metadata::merkle_index(metadata);
+<bash>    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^[0m [0m[33mUnused assignment or binding for local 'merkle_index'. Consider removing, replacing with '_', or prefixing with '_' (e.g., '_merkle_index')[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/examples/../mailbox/../router/sources/router.move:10:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m10[0m [0m[34m│[0m   use hp_library::[0m[33mmsg_utils[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^^^^^^[0m [0m[33mUnused 'use' of alias 'msg_utils'. Consider removing it[0m
+<bash> 
+<bash> [0m[1m[38;5;11mwarning[W09001][0m[1m: unused alias[0m
+<bash>    [0m[34m┌─[0m /home/coin1/projects/hyperlane-move/move/examples/../mailbox/../router/sources/router.move:11:19
+<bash>    [0m[34m│[0m
+<bash> [0m[34m11[0m [0m[34m│[0m   use hp_library::[0m[33mh256[0m;
+<bash>    [0m[34m│[0m                   [0m[33m^^^^[0m [0m[33mUnused 'use' of alias 'h256'. Consider removing it[0m
+<bash> 
+<bash> package size 2374 bytes
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/47282a98
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x47282a984a9fa03631eabb837f2296b56755912689c7cdd197d3f76419aa4b4c",
+<bash>     "gas_used": 78,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "b2586f8d1347b988157b9e7aaea24d19064dfb596835145db1f93ff931948732",
+<bash>     "sequence_number": 1,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112260600687,
+<bash>     "version": 556,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0x21779477148b80ec9e123cc087a04ebbfb4a9de0ba64aa8f31510a0266423bb9"
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0x8b4376073a408ece791f4adc34a8afdde405bae071711dcbb95ca4e5d4f26c93"
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xef7adb55757d157d1a1f76d5d04806aba4f9099a32260b9356d6dd53c177cd1e"
+<bash> }
+<bash> {
+<bash>   "Result": "Added 100000000 Octas to account 0xcc7867910e0c3a1b8f304255123a4459c0222c78987d628f1effbf122f436b7b"
+<bash> }
+<E2E> (../move/e2e/)$ /usr/bin/bash init_states.sh init_ln1_modules
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/275a5619
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x275a5619e21af509c4439dfba2838a665cec63a0266f2dbe29de49f0e86646b2",
+<bash>     "gas_used": 5,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "a4a4eb4bab83650ba62cabe9ce429ad021b29c12f2fbf808768838255c7e191d",
+<bash>     "sequence_number": 2,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112266321449,
+<bash>     "version": 585,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/d25c46cd
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0xd25c46cd07e4f7a3609d1cf4bdf69a67914d8154b9b883a15aecab34ae0a2b53",
+<bash>     "gas_used": 20,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "d1eaef049ac77e63f2ffefae43e14c1a73700f25cde849b6614dc3f3580123fc",
+<bash>     "sequence_number": 2,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112266434787,
+<bash>     "version": 590,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/4bac5584
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x4bac55840f484f88a6683b6adb724b92997cc596067aa6187d8ddc16b66a911d",
+<bash>     "gas_used": 6,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "476307c25c54b76b331a4e3422ae293ada422f5455efed1553cf4de1222a108f",
+<bash>     "sequence_number": 2,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112269572669,
+<bash>     "version": 599,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/00d9c16a
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x00d9c16aff665ea45d54602a5f7beb903ade40173c6b34565e0f572e1c0cb381",
+<bash>     "gas_used": 23,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "6bbae7820a27ff21f28ba5a4b64c8b746cdd95e2b3264a686dd15651ef90a2a1",
+<bash>     "sequence_number": 2,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112269660695,
+<bash>     "version": 604,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<E2E> (../move/e2e/)$ /usr/bin/bash init_states.sh init_ln2_modules
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/2f0eb256
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x2f0eb256df46d6b5d6626eb551588f2a991d54e5ab99a33cd8b398b4b8c5a4ad",
+<bash>     "gas_used": 5,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "ce1f65297828eaa6e460724a869317154f05cdde26619c0e5c0ca23aac3f69c7",
+<bash>     "sequence_number": 2,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112271669974,
+<bash>     "version": 611,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/eae63b36
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0xeae63b364b1211bc70f744cb6827bd2bcaed8ae0fcaf8ce24ba5cc8eba893e98",
+<bash>     "gas_used": 20,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "b2586f8d1347b988157b9e7aaea24d19064dfb596835145db1f93ff931948732",
+<bash>     "sequence_number": 2,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112271949537,
+<bash>     "version": 616,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/f773c52b
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0xf773c52bcd0ebf2fefaa7e3288f7f517e39f3723639195db5ea8f262196477e2",
+<bash>     "gas_used": 6,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "d338e68ca12527e77cab474ee8ec91ffa4e6512ced9ae8f47e28c5c7c4804b78",
+<bash>     "sequence_number": 2,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112272955701,
+<bash>     "version": 621,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<bash> Transaction submitted: https://explorer.aptoslabs.com/txn/3ff671ea
+<bash> {
+<bash>   "Result": {
+<bash>     "transaction_hash": "0x3ff671ea6c85ecd6c2f87ac9b263401a9d7a6e50ddbee2d0d34326a1b362ac8b",
+<bash>     "gas_used": 23,
+<bash>     "gas_unit_price": 100,
+<bash>     "sender": "39a36a558e955f29f60f9e7ad7e391510fcd6a744d8aec9b86952106bfc3e5e2",
+<bash>     "sequence_number": 2,
+<bash>     "success": true,
+<bash>     "timestamp_us": 1721112274999473,
+<bash>     "version": 628,
+<bash>     "vm_status": "Executed successfully"
+<bash>   }
+<bash> }
+<E2E> Downloading solana cli release v1.14.20
+<E2E> (/tmp/.tmppsQZ5E)$ /usr/bin/curl --output solana-release-x86_64-unknown-linux-gnu.tar.bz2 --location https://github.com/solana-labs/solana/releases/download/v1.14.20/solana-release-x86_64-unknown-linux-gnu.tar.bz2 --silent
+<E2E> Uncompressing solana release
+<E2E> (/tmp/.tmppsQZ5E)$ /usr/bin/tar --extract --file solana-release-x86_64-unknown-linux-gnu.tar.bz2
+<E2E> Building rust...
+<E2E> Installing typescript dependencies...
+<E2E> (./)$ /home/coin1/.cargo/bin/cargo build --features test-utils --bin relayer --bin validator --bin scraper --bin init-db --bin hyperlane-sealevel-client
+<E2E> (../)$ /usr/local/bin/yarn install
+<E2E> (/home/coin1/projects/hyperlane-move/rust/target/dist)$ /usr/bin/curl --output spl.tar.gz --location https://github.com/hyperlane-xyz/solana-program-library/releases/download/2023-07-27-01/spl.tar.gz --silent
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/account-utils/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-igp/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/access-control/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/serializable-account-meta/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/interchain-security-module-interface/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/mailbox/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/message-recipient-interface/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/ism/multisig-ism-message-id/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/ecdsa-signature/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/multisig-ism/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/test-utils/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/ism/test-ism/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/test-transaction-utils/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/validator-announce/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/hyperlane-sealevel-connection-client/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-token/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/hyperlane-sealevel-token/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-token-collateral/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-token-native/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-igp-test/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/mailbox-test/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/test-send-receiver/Cargo.toml
+<cargo> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo> warning: virtual workspace defaulting to `resolver = "1"` despite one or more workspace members being on edition 2021 which implies `resolver = "2"`
+<cargo> note: to keep the current resolver, specify `workspace.resolver = "1"` in the workspace root's manifest
+<cargo> note: to use the edition 2021 resolver, specify `workspace.resolver = "2"` in the workspace root's manifest
+<cargo> note: for more details see https://doc.rust-lang.org/cargo/reference/resolver.html#resolver-versions
+<cargo> warning: /home/coin1/projects/hyperlane-move/rust/Cargo.toml: unused manifest key: workspace.package.resolver
+<cargo> warning: /home/coin1/projects/hyperlane-move/rust/Cargo.toml: unused manifest key: workspace.resolve
+<cargo> warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: dependency (futures) specified without providing a local path, Git repository, version, or workspace dependency to use. This will be considered an error in future versions
+<cargo> warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: unused manifest key: dependencies.futures.worksapce
+<cargo> warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: dependency (mockall) specified without providing a local path, Git repository, version, or workspace dependency to use. This will be considered an error in future versions
+<cargo> warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: unused manifest key: dependencies.mockall.worksapce
+<cargo> warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: dependency (solana-sdk) specified without providing a local path, Git repository, version, or workspace dependency to use. This will be considered an error in future versions
+<cargo> warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: unused manifest key: dependencies.solana-sdk.worksapce
+<yarn> ➤ YN0000: · Yarn 4.0.2
+<yarn> ➤ YN0000: ┌ Resolution step
+<yarn> ➤ YN0000: └ Completed in 0s 227ms
+<yarn> ➤ YN0000: ┌ Post-resolution validation
+<yarn> ➤ YN0060: │ eslint is listed by your project with version 9.0.0, which doesn't satisfy what @typescript-eslint/eslint-plugin (p93671) and other dependencies request (^8.56.0).
+<yarn> ➤ YN0060: │ ethers is listed by your project with version 5.7.2, which doesn't satisfy what @typechain/hardhat (peba7d) and other dependencies request (^6.1.0).
+<yarn> ➤ YN0002: │ @hyperlane-xyz/cli@workspace:typescript/cli doesn't provide @ethersproject/abi (p77b27), requested by @hyperlane-xyz/sdk.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/cli@workspace:typescript/cli doesn't provide @ethersproject/providers (pee720), requested by @hyperlane-xyz/sdk.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/core@workspace:solidity [12ad0] doesn't provide @typechain/ethers-v6 (pe1263), requested by @typechain/hardhat.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/core@workspace:solidity [12ad0] doesn't provide @types/node (pc9c0a), requested by ts-node.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/core@workspace:solidity [12ad0] doesn't provide solidity-bytes-utils (p8388a), requested by @layerzerolabs/lz-evm-oapp-v2.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/core@workspace:solidity [bc32d] doesn't provide @typechain/ethers-v6 (pdf5d5), requested by @typechain/hardhat.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/core@workspace:solidity [bc32d] doesn't provide @types/node (paada1), requested by ts-node.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/core@workspace:solidity [bc32d] doesn't provide solidity-bytes-utils (p8e5cc), requested by @layerzerolabs/lz-evm-oapp-v2.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/core@workspace:solidity [ebd86] doesn't provide @typechain/ethers-v6 (p8205c), requested by @typechain/hardhat.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/core@workspace:solidity [ebd86] doesn't provide @types/node (pcd54c), requested by ts-node.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/core@workspace:solidity [ebd86] doesn't provide solidity-bytes-utils (pb0a3b), requested by @layerzerolabs/lz-evm-oapp-v2.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/core@workspace:solidity doesn't provide @typechain/ethers-v6 (p5f519), requested by @typechain/hardhat.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/core@workspace:solidity doesn't provide @types/node (p032e8), requested by ts-node.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/core@workspace:solidity doesn't provide solidity-bytes-utils (p5f86c), requested by @layerzerolabs/lz-evm-oapp-v2.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/helloworld@workspace:typescript/helloworld [bdde9] doesn't provide @typechain/ethers-v6 (p3806e), requested by @typechain/hardhat.
+<yarn> ➤ YN0002: │ @hyperlane-xyz/helloworld@workspace:typescript/helloworld doesn't provide @typechain/ethers-v6 (pbc47c), requested by @typechain/hardhat.
+<yarn> ➤ YN0086: │ Some peer dependencies are incorrectly met; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+<yarn> ➤ YN0000: └ Completed
+<yarn> ➤ YN0000: ┌ Fetch step
+<cargo>    Compiling move-core-types v0.0.4 (/home/coin1/projects/movementlabsxyz-aptos-core/third_party/move/move-core/types)
+<cargo>    Compiling move-borrow-graph v0.0.1 (/home/coin1/projects/movementlabsxyz-aptos-core/third_party/move/move-borrow-graph)
+<cargo>    Compiling aptos-runtimes v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/crates/aptos-runtimes)
+<cargo>    Compiling aptos-crypto-derive v0.0.3 (/home/coin1/projects/movementlabsxyz-aptos-core/crates/aptos-crypto-derive)
+<cargo>    Compiling aptos-bitvec v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/crates/aptos-bitvec)
+<cargo>    Compiling move-symbol-pool v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/third_party/move/move-symbol-pool)
+<cargo>    Compiling aptos-infallible v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/crates/aptos-infallible)
+<cargo>    Compiling aptos-log-derive v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/crates/aptos-log-derive)
+<cargo>    Compiling abstract-domain-derive v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/third_party/move/move-model/bytecode/abstract_domain_derive)
+<cargo>    Compiling aptos-global-constants v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/config/global-constants)
+<cargo>    Compiling aptos-metrics-core v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/crates/aptos-metrics-core)
+<cargo>    Compiling aptos-protos v1.1.2 (/home/coin1/projects/movementlabsxyz-aptos-core/protos/rust)
+<cargo>    Compiling aptos-temppath v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/crates/aptos-temppath)
+<cargo>    Compiling aptos-utils v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/aptos-utils)
+<cargo>    Compiling aptos-short-hex-str v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/crates/short-hex-str)
+<cargo>    Compiling aptos-openapi v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/crates/aptos-openapi)
+<cargo>    Compiling aptos-speculative-state-helper v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/crates/aptos-speculative-state-helper)
+<cargo>    Compiling aptos-time-service v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/crates/aptos-time-service)
+<cargo>    Compiling aptos-experimental-runtimes v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/experimental/runtimes)
+<E2E> Uncompressing solana programs
+<E2E> (/home/coin1/projects/hyperlane-move/rust/target/dist)$ /usr/bin/tar --extract --file spl.tar.gz
+<cargo>    Compiling ethers-prometheus v0.1.0 (/home/coin1/projects/hyperlane-move/rust/ethers-prometheus)
+<cargo> warning: `&` without an explicit lifetime name cannot be used here
+<cargo>   --> chains/hyperlane-cosmos/src/interchain_gas.rs:95:46
+<cargo>    |
+<cargo> 95 |     const INTERCHAIN_GAS_PAYMENT_EVENT_TYPE: &str = "igp-core-pay-for-gas";
+<cargo>    |                                              ^
+<cargo>    |
+<cargo>    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+<cargo>    = note: for more information, see issue #115010 <https://github.com/rust-lang/rust/issues/115010>
+<cargo>    = note: `#[warn(elided_lifetimes_in_associated_constant)]` on by default
+<cargo> help: use the `'static` lifetime
+<cargo>    |
+<cargo> 95 |     const INTERCHAIN_GAS_PAYMENT_EVENT_TYPE: &'static str = "igp-core-pay-for-gas";
+<cargo>    |                                               +++++++
+<cargo> 
+<cargo> warning: `&` without an explicit lifetime name cannot be used here
+<cargo>    --> chains/hyperlane-cosmos/src/mailbox.rs:274:40
+<cargo>     |
+<cargo> 274 |     const MESSAGE_DISPATCH_EVENT_TYPE: &str = "mailbox_dispatch";
+<cargo>     |                                        ^
+<cargo>     |
+<cargo>     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+<cargo>     = note: for more information, see issue #115010 <https://github.com/rust-lang/rust/issues/115010>
+<cargo> help: use the `'static` lifetime
+<cargo>     |
+<cargo> 274 |     const MESSAGE_DISPATCH_EVENT_TYPE: &'static str = "mailbox_dispatch";
+<cargo>     |                                         +++++++
+<cargo> 
+<cargo> warning: `&` without an explicit lifetime name cannot be used here
+<cargo>    --> chains/hyperlane-cosmos/src/merkle_tree_hook.rs:199:45
+<cargo>     |
+<cargo> 199 |     const MERKLE_TREE_INSERTION_EVENT_TYPE: &str = "hpl_hook_merkle::post_dispatch";
+<cargo>     |                                             ^
+<cargo>     |
+<cargo>     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+<cargo>     = note: for more information, see issue #115010 <https://github.com/rust-lang/rust/issues/115010>
+<cargo> help: use the `'static` lifetime
+<cargo>     |
+<cargo> 199 |     const MERKLE_TREE_INSERTION_EVENT_TYPE: &'static str = "hpl_hook_merkle::post_dispatch";
+<cargo>     |                                              +++++++
+<cargo> 
+<cargo> warning: `&` without an explicit lifetime name cannot be used here
+<cargo>   --> chains/hyperlane-cosmos/src/providers/rpc.rs:67:22
+<cargo>    |
+<cargo> 67 |     const WASM_TYPE: &str = "wasm";
+<cargo>    |                      ^
+<cargo>    |
+<cargo>    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+<cargo>    = note: for more information, see issue #115010 <https://github.com/rust-lang/rust/issues/115010>
+<cargo> help: use the `'static` lifetime
+<cargo>    |
+<cargo> 67 |     const WASM_TYPE: &'static str = "wasm";
+<cargo>    |                       +++++++
+<cargo> 
+<cargo> warning: unused imports: `trait_builder::*`, `validator_announce::*`
+<cargo>   --> chains/hyperlane-cosmos/src/lib.rs:29:23
+<cargo>    |
+<cargo> 29 |     trait_builder::*, trait_builder::*, validator_announce::*, validator_announce::*,
+<cargo>    |                       ^^^^^^^^^^^^^^^^                         ^^^^^^^^^^^^^^^^^^^^^
+<cargo>    |
+<cargo>    = note: `#[warn(unused_imports)]` on by default
+<cargo> 
+<cargo> warning: unused import: `protobuf::Message`
+<cargo>   --> chains/hyperlane-cosmos/src/providers/grpc.rs:33:5
+<cargo>    |
+<cargo> 33 | use protobuf::Message;
+<cargo>    |     ^^^^^^^^^^^^^^^^^
+<cargo> 
+<cargo> warning: `hyperlane-cosmos` (lib) generated 6 warnings (run `cargo fix --lib -p hyperlane-cosmos` to apply 5 suggestions)
+<cargo>    Compiling hyperlane-fuel v0.1.0 (/home/coin1/projects/hyperlane-move/rust/chains/hyperlane-fuel)
+<cargo>    Compiling aptos-drop-helper v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/crates/aptos-drop-helper)
+<E2E> Remove temporary solana files
+<E2E> (sealevel/programs/mailbox)$ PATH=/tmp/.tmpG3bd2n/bin:/home/coin1/.nvm/versions/node/v20.15.1/bin:/home/coin1/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin SBF_OUT_PATH=/home/coin1/projects/hyperlane-move/rust/target/dist /tmp/.tmpG3bd2n/bin/cargo-build-sbf
+<yarn> ➤ YN0000: └ Completed in 1s 55ms
+<yarn> ➤ YN0000: ┌ Link step
+<cargo>    Compiling aptos-crypto v0.0.3 (/home/coin1/projects/movementlabsxyz-aptos-core/crates/aptos-crypto)
+<cargo>    Compiling move-binary-format v0.0.3 (/home/coin1/projects/movementlabsxyz-aptos-core/third_party/move/move-binary-format)
+<cargo>    Compiling move-command-line-common v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/third_party/move/move-command-line-common)
+<cargo>    Compiling aptos-gas-algebra v0.0.1 (/home/coin1/projects/movementlabsxyz-aptos-core/aptos-move/aptos-gas-algebra)
+<yarn> ➤ YN0000: └ Completed in 1s 37ms
+<yarn> ➤ YN0000: · Done with warnings in 2s 468ms
+<E2E> (../)$ /usr/local/bin/yarn clean
+<cargo-build-sbf> info: uninstalling toolchain 'sbf'
+<cargo-build-sbf> info: toolchain 'sbf' uninstalled
+<cargo>    Compiling move-ir-types v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/third_party/move/move-ir/types)
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/account-utils/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-igp/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/access-control/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/serializable-account-meta/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/interchain-security-module-interface/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/mailbox/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/message-recipient-interface/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/ism/multisig-ism-message-id/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/ecdsa-signature/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/multisig-ism/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/test-utils/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/ism/test-ism/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/test-transaction-utils/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/validator-announce/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/hyperlane-sealevel-connection-client/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-token/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/libraries/hyperlane-sealevel-token/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-token-collateral/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-token-native/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/hyperlane-sealevel-igp-test/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/mailbox-test/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+<cargo-build-sbf> package:   /home/coin1/projects/hyperlane-move/rust/sealevel/programs/test-send-receiver/Cargo.toml
+<cargo-build-sbf> workspace: /home/coin1/projects/hyperlane-move/rust/Cargo.toml
+<cargo-build-sbf> warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: dependency (futures) specified without providing a local path, Git repository, or version to use. This will be considered an error in future versions
+<cargo-build-sbf> warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: dependency (mockall) specified without providing a local path, Git repository, or version to use. This will be considered an error in future versions
+<cargo-build-sbf> warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: dependency (solana-sdk) specified without providing a local path, Git repository, or version to use. This will be considered an error in future versions
+<cargo-build-sbf> warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: unused manifest key: dependencies.futures.worksapce
+<cargo-build-sbf> warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: unused manifest key: dependencies.mockall.worksapce
+<cargo-build-sbf> warning: /home/coin1/projects/hyperlane-move/rust/hyperlane-base/Cargo.toml: unused manifest key: dependencies.solana-sdk.worksapce
+<cargo-build-sbf> warning: /home/coin1/projects/hyperlane-move/rust/Cargo.toml: unused manifest key: workspace.package.resolver
+<cargo-build-sbf> warning: /home/coin1/projects/hyperlane-move/rust/Cargo.toml: unused manifest key: workspace.resolve
+<cargo>    Compiling aptos-vault-client v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/secure/storage/vault)
+<cargo-build-sbf> error: failed to get `aptos-api-types` as a dependency of package `aptos-sdk v0.0.3 (/home/coin1/projects/movementlabsxyz-aptos-core/sdk)`
+<cargo-build-sbf>     ... which satisfies path dependency `aptos-sdk` (locked to 0.0.3) of package `hyperlane-aptos v0.1.0 (/home/coin1/projects/hyperlane-move/rust/chains/hyperlane-aptos)`
+<cargo-build-sbf>     ... which satisfies path dependency `hyperlane-aptos` (locked to 0.1.0) of package `hyperlane-base v0.1.0 (/home/coin1/projects/hyperlane-move/rust/hyperlane-base)`
+<cargo-build-sbf>     ... which satisfies path dependency `hyperlane-base` (locked to 0.1.0) of package `relayer v0.1.0 (/home/coin1/projects/hyperlane-move/rust/agents/relayer)`
+<cargo-build-sbf> 
+<cargo-build-sbf> Caused by:
+<cargo-build-sbf>   failed to load source for dependency `aptos-api-types`
+<cargo-build-sbf> 
+<cargo-build-sbf> Caused by:
+<cargo-build-sbf>   Unable to update /home/coin1/projects/movementlabsxyz-aptos-core/api/types
+<cargo-build-sbf> 
+<cargo-build-sbf> Caused by:
+<cargo-build-sbf>   failed to parse manifest at `/home/coin1/projects/movementlabsxyz-aptos-core/api/types/Cargo.toml`
+<cargo-build-sbf> 
+<cargo-build-sbf> Caused by:
+<cargo-build-sbf>   feature `workspace-inheritance` is required
+<cargo-build-sbf> 
+<cargo-build-sbf>   The package requires the Cargo feature called `workspace-inheritance`, but that feature is not stabilized in this version of Cargo (1.62.1 (6177f0d0d 2022-08-01)).
+<cargo-build-sbf>   Consider adding `cargo-features = ["workspace-inheritance"]` to the top of Cargo.toml (above the [package] table) to tell Cargo you are opting in to use this unstable feature.
+<cargo-build-sbf>   See https://doc.rust-lang.org/nightly/cargo/reference/unstable.html#workspace-inheritance for more information about the status of this feature.
+<cargo>    Compiling move-ir-to-bytecode-syntax v0.1.0 (/home/coin1/projects/movementlabsxyz-aptos-core/third_party/move/move-ir-compiler/move-ir-to-bytecode/syntax)
+thread '<unnamed>' panicked at utils/run-locally/src/program.rs:308:9:
+Command returned non-zero exit code: Program { bin: Some("/tmp/.tmpG3bd2n/bin/cargo-build-sbf"), args: [], env: {"PATH": "/tmp/.tmpG3bd2n/bin:/home/coin1/.nvm/versions/node/v20.15.1/bin:/home/coin1/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin", "SBF_OUT_PATH": "/home/coin1/projects/hyperlane-move/rust/target/dist"}, working_dir: Some("sealevel/programs/mailbox"), log_filter: false }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+thread '<unnamed>' panicked at utils/run-locally/src/utils.rs:75:23:
+Task thread panicked!: Any { .. }
+thread 'main' panicked at utils/run-locally/src/utils.rs:75:23:
+Task thread panicked!: Any { .. }
+<E2E> Signaling children to stop...
+<E2E> Stopping child APTOS-NODE
+<E2E> Joining watchers...
+<cargo>    Compiling hyperlane-ethereum v0.1.0 (/home/coin1/projects/hyperlane-move/rust/chains/hyperlane-ethereum)

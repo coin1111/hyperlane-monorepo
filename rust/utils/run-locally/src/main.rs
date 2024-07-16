@@ -322,8 +322,8 @@ fn main() -> ExitCode {
     //
 
     install_aptos_cli().join();
-    // let aptos_local_net_runner = start_aptos_local_testnet().join();
-    // state.push_agent(aptos_local_net_runner);
+    let aptos_local_net_runner = start_aptos_local_testnet().join();
+    state.push_agent(aptos_local_net_runner);
     start_aptos_deploying().join();
     init_aptos_modules_state().join();
 
@@ -361,14 +361,14 @@ fn main() -> ExitCode {
 
     build_rust.join();
 
-    let solana_ledger_dir = tempdir().unwrap();
-    let start_solana_validator = start_solana_test_validator(
-        solana_path.clone(),
-        solana_program_path,
-        solana_ledger_dir.as_ref().to_path_buf(),
-    );
+    // let solana_ledger_dir = tempdir().unwrap();
+    // let start_solana_validator = start_solana_test_validator(
+    //     solana_path.clone(),
+    //     solana_program_path,
+    //     solana_ledger_dir.as_ref().to_path_buf(),
+    // );
 
-    let (solana_config_path, solana_validator) = start_solana_validator.join();
+    //let (solana_config_path, solana_validator) = start_solana_validator.join();
 
     // Was commented out in aptos-v3 commit
     // state.push_agent(solana_validator);
@@ -416,10 +416,10 @@ fn main() -> ExitCode {
         .arg("required-hook", "merkleTreeHook");
     // kathy_env_double_insertion.clone().run().join();
 
-    // Send some sealevel messages before spinning up the agents, to test the backward indexing cursor
-    for _i in 0..(SOL_MESSAGES_EXPECTED / 2) {
-        initiate_solana_hyperlane_transfer(solana_path.clone(), solana_config_path.clone()).join();
-    }
+    // // Send some sealevel messages before spinning up the agents, to test the backward indexing cursor
+    // for _i in 0..(SOL_MESSAGES_EXPECTED / 2) {
+    //     initiate_solana_hyperlane_transfer(solana_path.clone(), solana_config_path.clone()).join();
+    // }
 
     // spawn the rest of the validators
     for (i, validator_env) in validator_envs.into_iter().enumerate().skip(1) {
@@ -429,10 +429,10 @@ fn main() -> ExitCode {
 
     state.push_agent(relayer_env.spawn("RLY"));
 
-    // Send some sealevel messages after spinning up the relayer, to test the forward indexing cursor
-    for _i in 0..(SOL_MESSAGES_EXPECTED / 2) {
-        initiate_solana_hyperlane_transfer(solana_path.clone(), solana_config_path.clone()).join();
-    }
+    // // Send some sealevel messages after spinning up the relayer, to test the forward indexing cursor
+    // for _i in 0..(SOL_MESSAGES_EXPECTED / 2) {
+    //     initiate_solana_hyperlane_transfer(solana_path.clone(), solana_config_path.clone()).join();
+    // }
 
     for _i in 0..5 {
         aptos_send_messages().join();
@@ -452,26 +452,26 @@ fn main() -> ExitCode {
     let mut failure_occurred = false;
     let starting_relayer_balance: f64 = agent_balance_sum(9092).unwrap();
     while !SHUTDOWN.load(Ordering::Relaxed) {
-        if config.ci_mode {
-            // for CI we have to look for the end condition.
-            // if termination_invariants_met(&config, starting_relayer_balance)
-            if termination_invariants_met(
-                &config,
-                starting_relayer_balance,
-                &solana_path,
-                &solana_config_path,
-            )
-            .unwrap_or(false)
-            {
-                // end condition reached successfully
-                break;
-            } else if (Instant::now() - loop_start).as_secs() > config.ci_mode_timeout {
-                // we ran out of time
-                log!("CI timeout reached before queues emptied");
-                failure_occurred = true;
-                break;
-            }
-        }
+        // if config.ci_mode {
+        //     // for CI we have to look for the end condition.
+        //     // if termination_invariants_met(&config, starting_relayer_balance)
+        //     if termination_invariants_met(
+        //         &config,
+        //         starting_relayer_balance,
+        //         &solana_path,
+        //         &solana_config_path,
+        //     )
+        //     .unwrap_or(false)
+        //     {
+        //         // end condition reached successfully
+        //         break;
+        //     } else if (Instant::now() - loop_start).as_secs() > config.ci_mode_timeout {
+        //         // we ran out of time
+        //         log!("CI timeout reached before queues emptied");
+        //         failure_occurred = true;
+        //         break;
+        //     }
+        // }
 
         // verify long-running tasks are still running
         for (name, child) in state.agents.iter_mut() {

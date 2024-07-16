@@ -51,7 +51,7 @@ license-file = "../LICENSE.md"
 publish = false
 version = "0.1.0"
 resolver = "2"
-rust-version = "1.75.0"
+rust-version = "1.76.0"
 
 [workspace.dependencies]
 Inflector = "0.11.4"
@@ -200,8 +200,10 @@ bcs = { git = "https://github.com/aptos-labs/bcs.git", rev = "d31fab9d81748e2594
 rand = "0.7.3"
 
 [workspace.dependencies.aptos-sdk]
-git = "https://github.com/movementlabsxyz/aptos-core"
-rev = "cd4e28b4723244ec932099a51061fe49aaa5890f" #hyperlane fix 
+path = "../../movementlabsxyz-aptos-core/sdk"
+#git = "https://github.com/movementlabsxyz/aptos-core"
+#rev = "cd4e28b4723244ec932099a51061fe49aaa5890f" #hyperlane fix
+#rev = "b54d443967ff4ce621a84f7c09f9a59a0b03e01c"
 ## End
 
 [workspace.dependencies.ethers]
