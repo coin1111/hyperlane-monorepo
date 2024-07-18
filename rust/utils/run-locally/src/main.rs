@@ -151,12 +151,14 @@ fn main() -> ExitCode {
 
     let config = Config::load();
 
-    let solana_checkpoint_path = Path::new(SOLANA_CHECKPOINT_LOCATION);
-    fs::remove_dir_all(solana_checkpoint_path).unwrap_or_default();
-    let checkpoints_dirs: Vec<DynPath> = (0..VALIDATOR_COUNT - 1)
-        .map(|_| Box::new(tempdir().unwrap()) as DynPath)
-        .chain([Box::new(solana_checkpoint_path) as DynPath])
+    //let solana_checkpoint_path = Path::new(SOLANA_CHECKPOINT_LOCATION);
+    let validator_checkpoint_path = "/tmp/hpval";
+    //fs::remove_dir_all(solana_checkpoint_path).unwrap_or_default();
+    let checkpoints_dirs: Vec<DynPath> = (0..VALIDATOR_COUNT)
+        .map(|i| Box::new(format!("{}_{}", validator_checkpoint_path, i )) as DynPath)
+    //    .chain([Box::new(solana_checkpoint_path) as DynPath])
         .collect();
+    log!("checkpoints_dirs: {:?}", checkpoints_dirs.len());
     let rocks_db_dir = tempdir().unwrap();
     let relayer_db = concat_path(&rocks_db_dir, "relayer");
     let validator_dbs = (0..VALIDATOR_COUNT)
@@ -210,6 +212,8 @@ fn main() -> ExitCode {
         .hyp_env("CHAINS_APTOSLOCALNET2_SIGNER_KEY", RELAYER_KEYS[6])
         .hyp_env("CHAINS_APTOSLOCALNET1_RPCCONSENSUSTYPE", "httpFallback")
         .hyp_env("CHAINS_APTOSLOCALNET2_RPCCONSENSUSTYPE", "httpFallback")
+        .hyp_env("CHAINS_APTOSLOCALNET2_MERKLETREEHOOK", "0x476307c25c54b76b331a4e3422ae293ada422f5455efed1553cf4de1222a108f")
+        .hyp_env("CHAINS_APTOSLOCALNET1_MERKLETREEHOOK", "0x476307c25c54b76b331a4e3422ae293ada422f5455efed1553cf4de1222a108f")
         .hyp_env(
             "CHAINS_APTOSLOCALNET1_CONNECTION_URLS",
             "http://127.0.0.1:8080/v1",
@@ -270,6 +274,8 @@ fn main() -> ExitCode {
         .hyp_env("CHAINS_TEST2_BLOCKS_REORGPERIOD", "0")
         .hyp_env("CHAINS_TEST3_BLOCKS_REORGPERIOD", "0")
         .hyp_env("INTERVAL", "5")
+        .hyp_env("CHAINS_APTOSLOCALNET2_MERKLETREEHOOK", "0x476307c25c54b76b331a4e3422ae293ada422f5455efed1553cf4de1222a108f")
+        .hyp_env("CHAINS_APTOSLOCALNET1_MERKLETREEHOOK", "0x476307c25c54b76b331a4e3422ae293ada422f5455efed1553cf4de1222a108f")
         .hyp_env("CHECKPOINTSYNCER_TYPE", "localStorage");
 
     let validator_envs = (0..VALIDATOR_COUNT)
@@ -327,9 +333,9 @@ fn main() -> ExitCode {
     start_aptos_deploying().join();
     init_aptos_modules_state().join();
 
-    let (solana_path, solana_path_tempdir) = install_solana_cli_tools().join();
-    state.data.push(Box::new(solana_path_tempdir));
-    let solana_program_builder = build_solana_programs(solana_path.clone());
+    // let (solana_path, solana_path_tempdir) = install_solana_cli_tools().join();
+    // state.data.push(Box::new(solana_path_tempdir));
+    // let solana_program_builder = build_solana_programs(solana_path.clone());
 
     // this task takes a long time in the CI so run it in parallel
     log!("Building rust...");
@@ -346,7 +352,7 @@ fn main() -> ExitCode {
 
     let start_anvil = start_anvil(config.clone());
 
-    let solana_program_path = solana_program_builder.join();
+    //let solana_program_path = solana_program_builder.join();
 
     log!("Running postgres db...");
     let postgres = Program::new("docker")
@@ -359,7 +365,11 @@ fn main() -> ExitCode {
         .spawn("SQL");
     state.push_agent(postgres);
 
+    log!("Finished spawning postgress...");
+
     build_rust.join();
+
+    log!("Finished building rust...");
 
     // let solana_ledger_dir = tempdir().unwrap();
     // let start_solana_validator = start_solana_test_validator(
@@ -384,49 +394,52 @@ fn main() -> ExitCode {
         .run()
         .join();
     // state.push_agent(scraper_env.spawn("SCR"));
+    log!("Finished init postgres db...");
 
     // Send half the kathy messages before starting the rest of the agents
-    let kathy_env_single_insertion = Program::new("yarn")
-        .working_dir(INFRA_PATH)
-        .cmd("kathy")
-        .arg("messages", (config.kathy_messages / 4).to_string())
-        .arg("timeout", "1000");
-    // kathy_env_single_insertion.clone().run().join();
+    // let kathy_env_single_insertion = Program::new("yarn")
+    //     .working_dir(INFRA_PATH)
+    //     .cmd("kathy")
+    //     .arg("messages", (config.kathy_messages / 4).to_string())
+    //     .arg("timeout", "1000");
+    // // kathy_env_single_insertion.clone().run().join();
+    //
+    // let kathy_env_zero_insertion = Program::new("yarn")
+    //     .working_dir(INFRA_PATH)
+    //     .cmd("kathy")
+    //     .arg(
+    //         "messages",
+    //         (ZERO_MERKLE_INSERTION_KATHY_MESSAGES / 2).to_string(),
+    //     )
+    //     .arg("timeout", "1000")
+    //     // replacing the `aggregationHook` with the `interchainGasPaymaster` means there
+    //     // is no more `merkleTreeHook`, causing zero merkle insertions to occur.
+    //     .arg("default-hook", "interchainGasPaymaster");
+    // // kathy_env_zero_insertion.clone().run().join();
 
-    let kathy_env_zero_insertion = Program::new("yarn")
-        .working_dir(INFRA_PATH)
-        .cmd("kathy")
-        .arg(
-            "messages",
-            (ZERO_MERKLE_INSERTION_KATHY_MESSAGES / 2).to_string(),
-        )
-        .arg("timeout", "1000")
-        // replacing the `aggregationHook` with the `interchainGasPaymaster` means there
-        // is no more `merkleTreeHook`, causing zero merkle insertions to occur.
-        .arg("default-hook", "interchainGasPaymaster");
-    // kathy_env_zero_insertion.clone().run().join();
-
-    let kathy_env_double_insertion = Program::new("yarn")
-        .working_dir(INFRA_PATH)
-        .cmd("kathy")
-        .arg("messages", (config.kathy_messages / 4).to_string())
-        .arg("timeout", "1000")
-        // replacing the `protocolFees` required hook with the `merkleTreeHook`
-        // will cause double insertions to occur, which should be handled correctly
-        .arg("required-hook", "merkleTreeHook");
-    // kathy_env_double_insertion.clone().run().join();
+    // let kathy_env_double_insertion = Program::new("yarn")
+    //     .working_dir(INFRA_PATH)
+    //     .cmd("kathy")
+    //     .arg("messages", (config.kathy_messages / 4).to_string())
+    //     .arg("timeout", "1000")
+    //     // replacing the `protocolFees` required hook with the `merkleTreeHook`
+    //     // will cause double insertions to occur, which should be handled correctly
+    //     .arg("required-hook", "merkleTreeHook");
+    // // kathy_env_double_insertion.clone().run().join();
 
     // // Send some sealevel messages before spinning up the agents, to test the backward indexing cursor
     // for _i in 0..(SOL_MESSAGES_EXPECTED / 2) {
     //     initiate_solana_hyperlane_transfer(solana_path.clone(), solana_config_path.clone()).join();
     // }
 
+    log!("Spawning rest of validators...");
     // spawn the rest of the validators
     for (i, validator_env) in validator_envs.into_iter().enumerate().skip(1) {
         let validator = validator_env.spawn(make_static(format!("VL{}", 1 + i)));
         state.push_agent(validator);
     }
 
+    log!("Spawning relayer...");
     state.push_agent(relayer_env.spawn("RLY"));
 
     // // Send some sealevel messages after spinning up the relayer, to test the forward indexing cursor
@@ -434,6 +447,7 @@ fn main() -> ExitCode {
     //     initiate_solana_hyperlane_transfer(solana_path.clone(), solana_config_path.clone()).join();
     // }
 
+    log!("Send aptos messages...");
     for _i in 0..5 {
         aptos_send_messages().join();
     }
@@ -442,7 +456,7 @@ fn main() -> ExitCode {
     log!("Ctrl+C to end execution...");
 
     // Send half the kathy messages after the relayer comes up
-    // kathy_env_double_insertion.clone().run().join();
+    // kathy_env_double_insertion.clone(Init pos).run().join();
     // kathy_env_zero_insertion.clone().run().join();
     // state.push_agent(kathy_env_single_insertion.flag("mineforever").spawn("KTY"));
 
@@ -450,7 +464,7 @@ fn main() -> ExitCode {
     // give things a chance to fully start.
     sleep(Duration::from_secs(10));
     let mut failure_occurred = false;
-    let starting_relayer_balance: f64 = agent_balance_sum(9092).unwrap();
+    //let starting_relayer_balance: f64 = agent_balance_sum(9092).unwrap();
     while !SHUTDOWN.load(Ordering::Relaxed) {
         // if config.ci_mode {
         //     // for CI we have to look for the end condition.
