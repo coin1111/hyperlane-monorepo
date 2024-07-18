@@ -22,10 +22,3 @@ sudo apt install libudev-dev -y
 wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb
 sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb.1
 ```
-
-## setup aptos sdk dir
-
-```
-git pull origin https://github.com/movementlabsxyz/aptos-core.git  movementlabsxyz-aptos-core
-git checkout -b hyperlane cd4e28b4723244ec932099a51061fe49aaa5890f
-```

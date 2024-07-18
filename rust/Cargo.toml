@@ -200,10 +200,8 @@ bcs = { git = "https://github.com/aptos-labs/bcs.git", rev = "d31fab9d81748e2594
 rand = "0.7.3"
 
 [workspace.dependencies.aptos-sdk]
-path = "../../movementlabsxyz-aptos-core/sdk"
-#git = "https://github.com/movementlabsxyz/aptos-core"
-#rev = "cd4e28b4723244ec932099a51061fe49aaa5890f" #hyperlane fix
-#rev = "b54d443967ff4ce621a84f7c09f9a59a0b03e01c"
+git = "https://github.com/movementlabsxyz/aptos-core"
+rev = "cd4e28b4723244ec932099a51061fe49aaa5890f" #hyperlane fix
 ## End
 
 [workspace.dependencies.ethers]
