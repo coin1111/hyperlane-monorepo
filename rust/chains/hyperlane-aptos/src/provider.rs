@@ -94,6 +94,7 @@ impl HyperlaneProvider for AptosHpProvider {
     }
 
     async fn get_chain_metrics(&self) -> ChainResult<Option<ChainInfo>> {
-        todo!() // FIXME
+        // dummy implementation
+       Ok(None)
     }
 }

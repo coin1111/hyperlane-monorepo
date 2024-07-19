@@ -166,7 +166,8 @@ impl MetricsUpdater {
                     // Note: Whatever this `chain`'s native currency is
                     "token_symbol" => "Native",
                     "token_name" => "Native"
-                }).set(balance)
+                }).set(balance);
+                debug!("Wallet {wallet_name} ({wallet_addr}) on chain {chain} balance for native currency updated to {balance}");
             },
             Err(e) => warn!("Metric update failed for wallet {wallet_name} ({wallet_addr}) on chain {chain} balance for native currency; {e}")
         }
