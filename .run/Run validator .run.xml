@@ -30,6 +30,8 @@
       <env name="HYP_ORIGINCHAINNAME" value="aptoslocalnet1" />
       <env name="HYP_RUST_BACKTRACE" value="full" />
       <env name="HYP_VALIDATOR_KEY" value="0xb25d6937002ecd4d79c7bdfddc0053febc8896f2109e96c45bf69efd84544cd5" />
+      <env name="HYP_CHAINS_APTOSLOCALNET1_MERKLETREEHOOK" value="0x476307c25c54b76b331a4e3422ae293ada422f5455efed1553cf4de1222a108f" />
+      <env name="HYP_CHAINS_APTOSLOCALNET2_MERKLETREEHOOK" value="0xd338e68ca12527e77cab474ee8ec91ffa4e6512ced9ae8f47e28c5c7c4804b78" />
     </envs>
     <option name="emulateTerminal" value="true" />
     <option name="channel" value="DEFAULT" />
