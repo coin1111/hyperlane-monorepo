@@ -302,23 +302,10 @@ fn main() -> ExitCode {
         .arg("features", "test-utils")
         .arg("bin", "relayer")
         .arg("bin", "validator")
-        .arg("bin", "scraper")
-        .arg("bin", "init-db")
         .filter_logs(|l| !l.contains("workspace-inheritance"))
         .run();
 
     // let start_anvil = start_anvil(config.clone());
-
-    log!("Running postgres db...");
-    let postgres = Program::new("docker")
-        .cmd("run")
-        .flag("rm")
-        .arg("name", "scraper-testnet-postgres")
-        .arg("env", "POSTGRES_PASSWORD=47221c18c610")
-        .arg("publish", "5432:5432")
-        .cmd("postgres:14")
-        .spawn("SQL");
-    state.push_agent(postgres);
 
     build_rust.join();
 
@@ -326,12 +313,6 @@ fn main() -> ExitCode {
     state.push_agent(validator_envs.first().unwrap().clone().spawn("VL1"));
 
     sleep(Duration::from_secs(5));
-
-    log!("Init postgres db...");
-    Program::new(concat_path(AGENT_BIN_PATH, "init-db"))
-        .run()
-        .join();
-    // state.push_agent(scraper_env.spawn("SCR"));
 
     // Send half the kathy messages before starting the rest of the agents
     let kathy_env = Program::new("yarn")
