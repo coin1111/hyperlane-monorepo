@@ -31,13 +31,21 @@ APTOSLOCALNET1_DOMAIN=14411
 APTOSLOCALNET2_DOMAIN=14412
 BSCTESTNET_DOMAIN=97
 
+
+if [ -z "${HYP_LOCAL_BIN}" ]; then
+  export LOCAL_BIN="$HOME/.local/bin"
+else
+  export LOCAL_BIN="${HYP_LOCAL_BIN}"
+fi
+
+# To make use of aptos cli
+export PATH="${LOCAL_BIN}:$PATH"
+
 REST_API_URL="http://0.0.0.0:8080/v1"
 # VALIDATOR_ETH_SIGNER="0x598264ff31f198f6071226b2b7e9ce360163accd"
 
 # inits
 function init_ln1_modules() {  
-  # To make use of aptos cli
-  export PATH="/root/.local/bin:$PATH"
 
   cd "$(pwd)"
   # init validator
@@ -55,8 +63,6 @@ function init_ln1_modules() {
 }
 
 function init_ln2_modules() {  
-  # To make use of aptos cli
-  export PATH="/root/.local/bin:$PATH"
 
   cd "$(pwd)"
   # init validator
@@ -74,20 +80,18 @@ function init_ln2_modules() {
 }
 
 function send_hello_ln1_to_ln2() {
-  
-  export PATH="/root/.local/bin:$PATH"
+
 
   cd "$(pwd)"
 
-  cd ../examples && aptos move run --function-id $LN1_EXAMPLES_ADDRESS::hello_world::send_message --args u32:$APTOSLOCALNET2_DOMAIN string:"Hello World!" --url $REST_API_URL --private-key-file "../e2e/aptos-test-keys/localnet1/examples-keypair.json" --assume-yes
+  cd ../examples && aptos move run --function-id $LN1_EXAMPLES_ADDRESS::hello_world::send_message_with_gas --args u32:$APTOSLOCALNET2_DOMAIN string:"Hello World!" --url $REST_API_URL --private-key-file "../e2e/aptos-test-keys/localnet1/examples-keypair.json" --assume-yes
 }
 function send_hello_ln2_to_ln1() {
-  
-  export PATH="/root/.local/bin:$PATH"
+
 
   cd "$(pwd)"
 
-  cd ../examples && aptos move run --function-id $LN2_EXAMPLES_ADDRESS::hello_world::send_message --args u32:$APTOSLOCALNET1_DOMAIN string:"Hello World!" --url $REST_API_URL --private-key-file "../e2e/aptos-test-keys/localnet2/examples-keypair.json" --assume-yes
+  cd ../examples && aptos move run --function-id $LN2_EXAMPLES_ADDRESS::hello_world::send_message_with_gas --args u32:$APTOSLOCALNET1_DOMAIN string:"Hello World!" --url $REST_API_URL --private-key-file "../e2e/aptos-test-keys/localnet2/examples-keypair.json" --assume-yes
 }
 
 #`address:0x1 bool:true u8:0 u256:1234 "bool:[true, false]" 'address:[["0xace", "0xbee"], []]'`
