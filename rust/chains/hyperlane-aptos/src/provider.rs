@@ -2,10 +2,9 @@ use aptos_sdk::crypto::HashValue;
 use aptos_sdk::rest_client::aptos_api_types::Transaction;
 
 use async_trait::async_trait;
+use tracing::warn;
 
-use hyperlane_core::{
-    BlockInfo, ChainInfo, ChainResult, HyperlaneChain, HyperlaneDomain, HyperlaneProvider, TxnInfo, TxnReceiptInfo, H256, U256
-};
+use hyperlane_core::{BlockInfo, ChainInfo, ChainResult, HyperlaneChain, HyperlaneDomain, HyperlaneProvider, TxnInfo, TxnReceiptInfo, H256, U256, ChainCommunicationError};
 
 use crate::{convert_hex_string_to_h256, AptosClient};
 
@@ -89,11 +88,36 @@ impl HyperlaneProvider for AptosHpProvider {
         Ok(true)
     }
 
-    async fn get_balance(&self, _address: String) -> ChainResult<U256> {
-        Ok(U256::from(0)) // Dummy implementation
+    async fn get_balance(&self, address: String) -> ChainResult<U256> {
+        let balance = self.aptos_client
+            .get_account_balance(address.parse()
+            .map_err(ChainCommunicationError::from_other)?).await
+            .map_err(ChainCommunicationError::from_other)?.into_inner();
+        Ok(U256::from(balance.get()))
     }
 
     async fn get_chain_metrics(&self) -> ChainResult<Option<ChainInfo>> {
+        let state =  self.aptos_client.get_ledger_information().await
+            .map_err(ChainCommunicationError::from_other)?;
+        let mut version = state.state().version;
+        while version > 0 {
+            let block = self.aptos_client.get_block_by_version(version, false).await
+                .unwrap().into_inner();
+            if block.block_height.0 != state.state().block_height {
+                version -= 1;
+                continue;
+            }
+            let timestamp = block.block_timestamp.0;
+            return Ok(Some(ChainInfo {
+                latest_block: BlockInfo {
+                    hash: convert_hex_string_to_h256(&block.block_hash.to_string()).unwrap(),
+                    timestamp, // microseconds
+                    number: state.state().block_height,
+                },
+                min_gas_price: None,
+            }));
+        }
+        warn!("No block found for the current ledger version {} and block_height {}", state.state().version, state.state().block_height);
         Ok(None)
     }
 }
