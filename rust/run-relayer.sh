@@ -66,9 +66,7 @@ else
 fi
 
 rm -rf "$HYP_DB" || true
-rm -rf "$HYP_CHECKPOINTSYNCER_PATH" || true
 mkdir -p "$HYP_DB"
-mkdir -p "$HYP_CHECKPOINTSYNCER_PATH"
 
 target/debug/relayer
 
