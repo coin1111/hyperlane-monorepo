@@ -6,7 +6,7 @@ export HYP_RUST_BACKTRACE="full"
 export HYP_LOG_FORMAT="compact"
 export HYP_LOG_LEVEL="debug"
 export HYP_INTERVAL="5"
-export HYP_LOG_LEVEL="0"
+#export HYP_LOG_LEVEL="0"
 
 export HYP_RELAYCHAINS="aptoslocalnet1,aptoslocalnet2"
 export HYP_CHAINS_TEST1_NAME="aptoslocalnet1"
