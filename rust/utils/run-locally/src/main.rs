@@ -29,12 +29,12 @@ use tempfile::tempdir;
 
 use crate::{
     aptos::*,
+    aptos::*,
     config::Config,
     ethereum::start_anvil,
     invariants::{termination_invariants_met, SOL_MESSAGES_EXPECTED},
     metrics::agent_balance_sum,
     solana::*,
-    aptos::*,
     utils::{concat_path, make_static, stop_child, AgentHandles, ArbitraryData, TaskHandle},
 };
 use std::env;
@@ -62,7 +62,6 @@ const RELAYER_KEYS: &[&str] = &[
     "0x892bf6949af4233e62f854cb3618bc1a3ee3341dc71ada08c4d5deca239acf4f",
     // sealeveltest2
     "0x892bf6949af4233e62f854cb3618bc1a3ee3341dc71ada08c4d5deca239acf4f",
-    
     // aptoslocalnet1
     "0x8cb68128b8749613f8df7612e4efd281f8d70f6d195c53a14c27fc75980446c1", // 0x8b43
     // aptoslocalnet2
@@ -237,18 +236,21 @@ fn main() -> ExitCode {
                 "type": "none"
             }]"#,
         )
-        .hyp_env("CHAINS_APTOSLOCALNET1_MERKLETREEHOOK", "0x476307c25c54b76b331a4e3422ae293ada422f5455efed1553cf4de1222a108f")
-        .hyp_env("CHAINS_APTOSLOCALNET2_MERKLETREEHOOK", "0xd338e68ca12527e77cab474ee8ec91ffa4e6512ced9ae8f47e28c5c7c4804b78")
+        .hyp_env(
+            "CHAINS_APTOSLOCALNET1_MERKLETREEHOOK",
+            "0x476307c25c54b76b331a4e3422ae293ada422f5455efed1553cf4de1222a108f",
+        )
+        .hyp_env(
+            "CHAINS_APTOSLOCALNET2_MERKLETREEHOOK",
+            "0xd338e68ca12527e77cab474ee8ec91ffa4e6512ced9ae8f47e28c5c7c4804b78",
+        )
         .arg(
             "chains.test1.customRpcUrls",
             "http://127.0.0.1:8545,http://127.0.0.1:8545,http://127.0.0.1:8545",
         )
         // default is used for TEST3
         .arg("defaultSigner.key", RELAYER_KEYS[2])
-        .arg(
-            "relayChains",
-            "aptoslocalnet1,aptoslocalnet2",
-        );
+        .arg("relayChains", "aptoslocalnet1,aptoslocalnet2");
 
     let base_validator_env = common_agent_env
         .clone()
@@ -271,10 +273,15 @@ fn main() -> ExitCode {
         .hyp_env("CHAINS_TEST1_BLOCKS_REORGPERIOD", "0")
         .hyp_env("CHAINS_TEST2_BLOCKS_REORGPERIOD", "0")
         .hyp_env("CHAINS_TEST3_BLOCKS_REORGPERIOD", "0")
-        .hyp_env("CHAINS_APTOSLOCALNET1_MERKLETREEHOOK", "0x476307c25c54b76b331a4e3422ae293ada422f5455efed1553cf4de1222a108f")
-        .hyp_env("CHAINS_APTOSLOCALNET2_MERKLETREEHOOK", "0xd338e68ca12527e77cab474ee8ec91ffa4e6512ced9ae8f47e28c5c7c4804b78")
+        .hyp_env(
+            "CHAINS_APTOSLOCALNET1_MERKLETREEHOOK",
+            "0x476307c25c54b76b331a4e3422ae293ada422f5455efed1553cf4de1222a108f",
+        )
+        .hyp_env(
+            "CHAINS_APTOSLOCALNET2_MERKLETREEHOOK",
+            "0xd338e68ca12527e77cab474ee8ec91ffa4e6512ced9ae8f47e28c5c7c4804b78",
+        )
         .hyp_env("INTERVAL", "5")
-
         .hyp_env("CHECKPOINTSYNCER_TYPE", "localStorage");
 
     let validator_envs = (0..VALIDATOR_COUNT)
@@ -285,7 +292,7 @@ fn main() -> ExitCode {
                 .hyp_env("DB", validator_dbs[i].to_str().unwrap())
                 .hyp_env("ORIGINCHAINNAME", VALIDATOR_ORIGIN_CHAINS[i])
                 .hyp_env("VALIDATOR_KEY", VALIDATOR_KEYS[i])
-                 .hyp_env(
+                .hyp_env(
                     "CHECKPOINTSYNCER_PATH",
                     (*checkpoints_dirs[i]).as_ref().to_str().unwrap(),
                 )
@@ -394,12 +401,7 @@ fn main() -> ExitCode {
     let starting_relayer_balance: f64 = agent_balance_sum(9092).unwrap();
     while !SHUTDOWN.load(Ordering::Relaxed) {
         if !is_loop {
-            if termination_invariants_met(
-                &config,
-                starting_relayer_balance,
-            )
-            .unwrap_or(false)
-            {
+            if termination_invariants_met(&config, starting_relayer_balance).unwrap_or(false) {
                 // end condition reached successfully
                 break;
             } else if (Instant::now() - loop_start).as_secs() > config.ci_mode_timeout {

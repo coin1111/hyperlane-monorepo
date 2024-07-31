@@ -4,7 +4,10 @@ use aptos_sdk::rest_client::aptos_api_types::Transaction;
 use async_trait::async_trait;
 use tracing::warn;
 
-use hyperlane_core::{BlockInfo, ChainInfo, ChainResult, HyperlaneChain, HyperlaneDomain, HyperlaneProvider, TxnInfo, TxnReceiptInfo, H256, U256, ChainCommunicationError};
+use hyperlane_core::{
+    BlockInfo, ChainCommunicationError, ChainInfo, ChainResult, HyperlaneChain, HyperlaneDomain,
+    HyperlaneProvider, TxnInfo, TxnReceiptInfo, H256, U256,
+};
 
 use crate::{convert_hex_string_to_h256, AptosClient};
 
@@ -89,21 +92,34 @@ impl HyperlaneProvider for AptosHpProvider {
     }
 
     async fn get_balance(&self, address: String) -> ChainResult<U256> {
-        let balance = self.aptos_client
-            .get_account_balance(address.parse()
-                .map_err(ChainCommunicationError::from_other)?).await
-            .map_err(ChainCommunicationError::from_other)?.into_inner();
+        let balance = self
+            .aptos_client
+            .get_account_balance(
+                address
+                    .parse()
+                    .map_err(ChainCommunicationError::from_other)?,
+            )
+            .await
+            .map_err(ChainCommunicationError::from_other)?
+            .into_inner();
         Ok(U256::from(balance.get()))
     }
 
     async fn get_chain_metrics(&self) -> ChainResult<Option<ChainInfo>> {
-        let state = self.aptos_client.get_ledger_information().await
+        let state = self
+            .aptos_client
+            .get_ledger_information()
+            .await
             .map_err(ChainCommunicationError::from_other)?;
         let mut version = state.state().version;
         let mut block_depth = 0;
         while version > 0 && block_depth > 100 {
-            let block = self.aptos_client.get_block_by_version(version, false).await
-                .unwrap().into_inner();
+            let block = self
+                .aptos_client
+                .get_block_by_version(version, false)
+                .await
+                .unwrap()
+                .into_inner();
             if block.block_height.0 != state.state().block_height {
                 version -= 1;
                 block_depth += 1;
@@ -119,7 +135,11 @@ impl HyperlaneProvider for AptosHpProvider {
                 min_gas_price: None,
             }));
         }
-        warn!("No block found for the current ledger version {} and block_height {}", state.state().version, state.state().block_height);
+        warn!(
+            "No block found for the current ledger version {} and block_height {}",
+            state.state().version,
+            state.state().block_height
+        );
         Ok(None)
     }
 }
