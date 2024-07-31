@@ -29,6 +29,7 @@ use crate::{
 };
 
 use super::ChainSigner;
+use hyperlane_aptos::AptosMailboxIndexer;
 
 /// A trait for converting to a type from a chain configuration with metrics
 #[async_trait]
@@ -499,10 +500,12 @@ impl ChainConf {
                 )?);
                 Ok(indexer as Box<dyn SequenceAwareIndexer<MerkleTreeInsertion>>)
             }
-            ChainConnectionConf::Aptos(_) => {
-                let indexer = Box::new(h_aptos::AptosMerkleTreeHookIndexer::new());
+            ChainConnectionConf::Aptos(conf) => {
+                let mailbox_indexer =
+                    Box::new(AptosMailboxIndexer::new(conf, locator)?);
+                let indexer = Box::new(h_aptos::AptosMerkleTreeHookIndexer::new(*mailbox_indexer));
                 Ok(indexer as Box<dyn SequenceAwareIndexer<MerkleTreeInsertion>>)
-            } // TODO: add tree_hook_indexer
+            }
         }
         .context(ctx)
     }

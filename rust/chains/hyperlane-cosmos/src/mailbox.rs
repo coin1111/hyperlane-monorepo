@@ -271,7 +271,7 @@ pub struct CosmosMailboxIndexer {
 
 impl CosmosMailboxIndexer {
     /// The message dispatch event type from the CW contract.
-    const MESSAGE_DISPATCH_EVENT_TYPE: &str = "mailbox_dispatch";
+    const MESSAGE_DISPATCH_EVENT_TYPE: &'static str = "mailbox_dispatch";
 
     /// Create a reference to a mailbox at a specific Cosmos address on some
     /// chain

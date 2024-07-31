@@ -196,7 +196,7 @@ pub struct CosmosMerkleTreeHookIndexer {
 
 impl CosmosMerkleTreeHookIndexer {
     /// The message dispatch event type from the CW contract.
-    const MERKLE_TREE_INSERTION_EVENT_TYPE: &str = "hpl_hook_merkle::post_dispatch";
+    const MERKLE_TREE_INSERTION_EVENT_TYPE: &'static str = "hpl_hook_merkle::post_dispatch";
 
     /// create new Cosmos MerkleTreeHookIndexer agent
     pub fn new(

@@ -1,15 +1,13 @@
 use crate::types::*;
-use crate::utils;
+use crate::{AptosMailboxIndexer, utils};
 use crate::AptosMailbox;
 use async_trait::async_trait;
 use derive_new::new;
-use hyperlane_core::Indexed;
+use hyperlane_core::{HyperlaneMessage, Indexed};
 use hyperlane_core::Indexer;
 use hyperlane_core::LogMeta;
 use hyperlane_core::MerkleTreeInsertion;
 use hyperlane_core::SequenceAwareIndexer;
-//use hyperlane_core::Indexed;
-//use hyperlane_core::InterchainGasPayment;
 use hyperlane_core::{
     accumulator::incremental::IncrementalMerkle, ChainCommunicationError, ChainResult, Checkpoint,
     MerkleTreeHook, H256
@@ -70,28 +68,40 @@ impl MerkleTreeHook for AptosMailbox {
     }
 }
 
-/// Struct that retrieves event data for a Sealevel merkle tree hook contract
+/// Struct that retrieves event data for Aptos merkle tree hook contract
 #[derive(Debug, new)]
-pub struct AptosMerkleTreeHookIndexer {}
+pub struct AptosMerkleTreeHookIndexer (AptosMailboxIndexer);
 
 #[async_trait]
 impl Indexer<MerkleTreeInsertion> for AptosMerkleTreeHookIndexer {
     async fn fetch_logs(
         &self,
-        _range: RangeInclusive<u32>,
+        range: RangeInclusive<u32>,
     ) -> ChainResult<Vec<(Indexed<MerkleTreeInsertion>, LogMeta)>> {
-        Ok(vec![])
+        let messages= self.0.fetch_logs(range).await?;
+        let merkle_tree_insertions = messages
+            .into_iter()
+            .map(|(m, meta)| (message_to_merkle_tree_insertion(m.inner()).into(), meta))
+            .collect();
+
+        Ok(merkle_tree_insertions)
     }
 
     async fn get_finalized_block_number(&self) -> ChainResult<u32> {
-        Ok(0)
+        Indexer::<HyperlaneMessage>::get_finalized_block_number(&self.0).await
     }
+}
+
+fn message_to_merkle_tree_insertion(message: &HyperlaneMessage) -> MerkleTreeInsertion {
+    let leaf_index = message.nonce;
+    let message_id = message.id();
+    MerkleTreeInsertion::new(leaf_index, message_id)
 }
 
 #[async_trait]
 impl SequenceAwareIndexer<MerkleTreeInsertion> for AptosMerkleTreeHookIndexer {
     async fn latest_sequence_count_and_tip(&self) -> ChainResult<(Option<u32>, u32)> {
-        Ok((None, 0))
+        SequenceAwareIndexer::<HyperlaneMessage>::latest_sequence_count_and_tip(&self.0).await
     }
 } 
 

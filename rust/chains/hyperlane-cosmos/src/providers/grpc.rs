@@ -30,7 +30,6 @@ use hyperlane_core::{
     ChainCommunicationError, ChainResult, ContractLocator, FixedPointNumber, HyperlaneDomain, U256,
 };
 
-use protobuf::Message;
 use serde::Serialize;
 use std::fmt::Debug;
 use tonic::{

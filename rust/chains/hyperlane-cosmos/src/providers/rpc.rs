@@ -64,7 +64,7 @@ pub struct CosmosWasmIndexer {
 }
 
 impl CosmosWasmIndexer {
-    const WASM_TYPE: &str = "wasm";
+    const WASM_TYPE: &'static str = "wasm";
 
     /// create new Cosmwasm RPC Provider
     pub fn new(
