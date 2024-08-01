@@ -24,6 +24,7 @@
       <env name="HYP_BASE_CHAINS_TEST3_INDEX_CHUNK" value="1" />
       <env name="HYP_BASE_CHECKPOINTSYNCER_PATH" value="/tmp/hp/checkpoints0" />
       <env name="HYP_BASE_CHECKPOINTSYNCER_TYPE" value="localStorage" />
+      <env name="HYP_BASE_ALLOWLOCALCHECKPOINTSYNCERS" value="true" />
       <env name="HYP_BASE_DB" value="/tmp/hp/relayer0" />
       <env name="HYP_BASE_DESTINATIONCHAINNAMES" value="aptoslocalnet1,aptoslocalnet2" />
       <env name="HYP_BASE_INTERVAL" value="5" />
