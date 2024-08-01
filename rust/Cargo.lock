@@ -6096,6 +6096,7 @@ dependencies = [
  "fuels",
  "futures",
  "futures-util",
+ "hex 0.4.3",
  "hyperlane-aptos",
  "hyperlane-core",
  "hyperlane-cosmos",

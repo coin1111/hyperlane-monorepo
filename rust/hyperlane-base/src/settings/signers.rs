@@ -1,6 +1,7 @@
 use async_trait::async_trait;
 use ed25519_dalek::SecretKey;
 use ethers::prelude::{AwsSigner, LocalWallet};
+use ethers::utils::hex;
 use ethers::utils::hex::ToHex;
 use eyre::{bail, Context, Report};
 use hyperlane_core::H256;
@@ -8,6 +9,7 @@ use hyperlane_sealevel::Keypair;
 use rusoto_core::Region;
 use rusoto_kms::KmsClient;
 use tracing::instrument;
+use hyperlane_aptos::signers;
 
 use super::aws_credentials::AwsChainCredentialsProvider;
 use crate::types::utils;
@@ -157,5 +159,28 @@ impl BuildableWithSignerConf for hyperlane_cosmos::Signer {
 impl ChainSigner for hyperlane_cosmos::Signer {
     fn address_string(&self) -> String {
         self.address.clone()
+    }
+}
+
+#[async_trait]
+impl BuildableWithSignerConf for hyperlane_aptos::signers::AptosSigner {
+    async fn build(conf: &SignerConf) -> Result<Self, Report> {
+        if let SignerConf::HexKey { key } = conf {
+            let secret = SecretKey::from_bytes(key.as_bytes())
+                .context("Invalid aptos ed25519 secret key")?;
+            use hyperlane_aptos::signers::AptosSigner;
+            Ok(
+                AptosSigner::new(Keypair::from_bytes(&ed25519_dalek::Keypair::from(secret).to_bytes())
+                    .context("Unable to create Keypair")?),
+            )
+        } else {
+            bail!(format!("{conf:?} key is not supported by aptos"));
+        }
+    }
+}
+
+impl ChainSigner for hyperlane_aptos::signers::AptosSigner {
+    fn address_string(&self) -> String {
+        hex::encode(solana_sdk::signer::Signer::pubkey(&self.0))
     }
 }

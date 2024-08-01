@@ -64,6 +64,7 @@ rusoto_core = "*"
 rusoto_kms = "*"
 rusoto_s3 = "*"
 rusoto_sts = "*"
+hex = "0.4.3"
 
 [dev-dependencies]
 color-eyre.workspace = true
