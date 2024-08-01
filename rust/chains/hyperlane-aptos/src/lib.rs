@@ -24,9 +24,9 @@ mod mailbox;
 mod merkle_tree_hook;
 mod multisig_ism;
 mod provider;
+/// signers
+pub mod signers;
 mod trait_builder;
 mod types;
 mod utils;
 mod validator_announce;
-/// signers
-pub mod signers;

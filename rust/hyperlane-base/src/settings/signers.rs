@@ -4,12 +4,12 @@ use ethers::prelude::{AwsSigner, LocalWallet};
 use ethers::utils::hex;
 use ethers::utils::hex::ToHex;
 use eyre::{bail, Context, Report};
+use hyperlane_aptos::signers;
 use hyperlane_core::H256;
 use hyperlane_sealevel::Keypair;
 use rusoto_core::Region;
 use rusoto_kms::KmsClient;
 use tracing::instrument;
-use hyperlane_aptos::signers;
 
 use super::aws_credentials::AwsChainCredentialsProvider;
 use crate::types::utils;
@@ -169,10 +169,10 @@ impl BuildableWithSignerConf for hyperlane_aptos::signers::AptosSigner {
             let secret = SecretKey::from_bytes(key.as_bytes())
                 .context("Invalid aptos ed25519 secret key")?;
             use hyperlane_aptos::signers::AptosSigner;
-            Ok(
-                AptosSigner::new(Keypair::from_bytes(&ed25519_dalek::Keypair::from(secret).to_bytes())
-                    .context("Unable to create Keypair")?),
-            )
+            Ok(AptosSigner::new(
+                Keypair::from_bytes(&ed25519_dalek::Keypair::from(secret).to_bytes())
+                    .context("Unable to create Keypair")?,
+            ))
         } else {
             bail!(format!("{conf:?} key is not supported by aptos"));
         }

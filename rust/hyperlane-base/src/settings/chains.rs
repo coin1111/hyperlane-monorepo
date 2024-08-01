@@ -751,7 +751,9 @@ impl ChainConf {
                     Box::new(conf.build::<h_sealevel::Keypair>().await?)
                 }
                 ChainConnectionConf::Cosmos(_) => Box::new(conf.build::<h_cosmos::Signer>().await?),
-                ChainConnectionConf::Aptos(_) => Box::new(conf.build::<h_aptos::signers::AptosSigner>().await?),
+                ChainConnectionConf::Aptos(_) => {
+                    Box::new(conf.build::<h_aptos::signers::AptosSigner>().await?)
+                }
             };
             Ok(Some(chain_signer))
         } else {
