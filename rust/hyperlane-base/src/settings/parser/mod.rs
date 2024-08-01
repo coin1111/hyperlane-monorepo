@@ -46,7 +46,7 @@ impl FromRawConf<RawAgentConf, Option<&HashSet<&str>>> for Settings {
 
         let metrics_port = p
             .chain(&mut err)
-            .get_opt_key("metricsPort")
+            .get_opt_key("metricsport")
             .parse_u16()
             .unwrap_or(9090);
 

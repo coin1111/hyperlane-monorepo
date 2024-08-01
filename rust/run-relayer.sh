@@ -39,14 +39,14 @@ fi
 #validator
 if [[ $1 -eq 0 ]]; then
   echo "Setting up validator 0"
-  export HYP_BASE_METRICSPORT=9096
+  export HYP_BASE_METRICS=9096
   export HYP_BASE_DB="/tmp/hp/relayer0"
   export HYP_BASE_ORIGINCHAINNAME=aptoslocalnet1
   export HYP_BASE_VALIDATOR_KEY="0xb25d6937002ecd4d79c7bdfddc0053febc8896f2109e96c45bf69efd84544cd5"
   export HYP_BASE_CHECKPOINTSYNCER_PATH="/tmp/hp/checkpoints0"
 elif [[ $1 -eq 1 ]]; then
   echo "Setting up validator 1"
-  export HYP_BASE_METRICSPORT=9097
+  export HYP_BASE_METRICS=9097
   export HYP_BASE_DB="/tmp/hp/relayer1"
   export HYP_BASE_ORIGINCHAINNAME=aptoslocalnet2
   export HYP_BASE_VALIDATOR_KEY="0xe299c1e6e1f89b4ed2992782137e24d5edbfc51bb702635a85ed6b687c2b5988"
