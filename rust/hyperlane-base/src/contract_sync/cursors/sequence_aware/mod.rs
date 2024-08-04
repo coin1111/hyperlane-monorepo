@@ -7,6 +7,7 @@ use hyperlane_core::{
     HyperlaneSequenceAwareIndexerStoreReader, IndexMode, Indexed, LogMeta, SequenceAwareIndexer,
 };
 use std::ops::RangeInclusive;
+use tracing::info;
 
 mod backward;
 mod forward;
@@ -79,6 +80,10 @@ impl<T: Debug> ForwardBackwardSequenceAwareSyncCursor<T> {
         let (sequence_count, tip) = latest_sequence_querier
             .latest_sequence_count_and_tip()
             .await?;
+        info!(
+            "Latest sequence count: {:?}, tip: {:?}",
+            sequence_count, tip
+        );
         let sequence_count = sequence_count.ok_or(ChainCommunicationError::from_other_str(
             "Failed to query sequence",
         ))?;

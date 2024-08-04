@@ -56,6 +56,7 @@ where
     /// Sync logs and write them to the LogStore
     #[tracing::instrument(name = "ContractSync", fields(domain=self.domain().name()), skip(self, cursor))]
     pub async fn sync(&self, label: &'static str, mut cursor: Box<dyn ContractSyncCursor<T>>) {
+        info!("Starting ContractSync.sync()");
         let chain_name = self.domain.as_ref();
         let indexed_height = self
             .metrics
@@ -65,8 +66,10 @@ where
             .metrics
             .stored_events
             .with_label_values(&[label, chain_name]);
+        info!("indexed height: {:?}, stored_logs: {:?}", indexed_height.get(), stored_logs.get());
 
         loop {
+            info!("ContractSync.sync() loop. latest_block: {:?}", cursor.latest_queried_block());
             indexed_height.set(cursor.latest_queried_block() as i64);
 
             let (action, eta) = match cursor.next_action().await {
@@ -82,7 +85,7 @@ where
                 // from the loop (the sleep duration)
                 #[allow(clippy::never_loop)]
                 CursorAction::Query(range) => loop {
-                    debug!(?range, "Looking for for events in index range");
+                    info!(?range, "Looking for for events in index range: {:?}", range);
 
                     let logs = match self.indexer.fetch_logs(range.clone()).await {
                         Ok(logs) => logs,
@@ -110,15 +113,18 @@ where
                     };
                     // Report amount of deliveries stored into db
                     stored_logs.inc_by(stored as u64);
+                    info!("Stored {} logs", stored);
                     // Update cursor
-                    if let Err(err) = cursor.update(logs, range).await {
+                    if let Err(err) = cursor.update(logs, range.clone()).await {
                         warn!(?err, "Error updating cursor");
                         break SLEEP_DURATION;
                     };
-                    break Default::default();
+                    info!("Updated cursor, latest block: {:?}, range: {:?}", cursor.latest_queried_block(), range);
+                    break SLEEP_DURATION;
                 },
                 CursorAction::Sleep(duration) => duration,
             };
+            info!("Sleeping for {:?}", sleep_duration);
             sleep(sleep_duration).await;
         }
     }

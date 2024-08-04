@@ -60,6 +60,7 @@ impl ValidatorSubmitter {
     /// Submits signed checkpoints from index 0 until the target checkpoint (inclusive).
     /// Runs idly forever once the target checkpoint is reached to avoid exiting the task.
     pub(crate) async fn backfill_checkpoint_submitter(self, target_checkpoint: Checkpoint) {
+        info!("backfill_checkpoint_submitter started");
         let mut tree = IncrementalMerkle::default();
         call_and_retry_indefinitely(|| {
             let target_checkpoint = target_checkpoint;
@@ -81,6 +82,7 @@ impl ValidatorSubmitter {
 
     /// Submits signed checkpoints indefinitely, starting from the `tree`.
     pub(crate) async fn checkpoint_submitter(self, mut tree: IncrementalMerkle) {
+        info!("Starting checkpoint submitter");
         // How often to log checkpoint info - once every minute
         let checkpoint_info_log_period = Duration::from_secs(60);
         // The instant in which we last logged checkpoint info, if at all
@@ -109,6 +111,7 @@ impl ValidatorSubmitter {
             self.metrics
                 .latest_checkpoint_observed
                 .set(latest_checkpoint.index as i64);
+            info!(index = latest_checkpoint.index, "Polled latest checkpoint");
 
             if should_log_checkpoint_info() {
                 info!(
@@ -170,6 +173,7 @@ impl ValidatorSubmitter {
             tree.count(),
             correctness_checkpoint,
         );
+        info!("Starting correctness checkpoint submitter");
 
         // All intermediate checkpoints will be stored here and signed once the correctness
         // checkpoint is reached.
@@ -198,6 +202,7 @@ impl ValidatorSubmitter {
                     checkpoint,
                     message_id,
                 });
+                info!("Pushed to queue, message_id= {:?}, index= {:?}", message_id, checkpoint.index);
             } else {
                 // If we haven't yet indexed the next merkle tree insertion but know that
                 // it will soon exist (because we know the correctness checkpoint), wait a bit and
@@ -271,9 +276,9 @@ impl ValidatorSubmitter {
             self.checkpoint_syncer
                 .write_checkpoint(&signed_checkpoint)
                 .await?;
-            debug!(
+            info!(
                 index = queued_checkpoint.index,
-                "Signed and submitted checkpoint"
+                "Signed and written checkpoint"
             );
 
             // TODO: move these into S3 implementations

@@ -4,7 +4,7 @@ use async_trait::async_trait;
 use ethers::core::types::Signature;
 use thiserror::Error;
 use tokio::sync::{mpsc, oneshot};
-use tracing::warn;
+use tracing::{info, warn};
 
 use hyperlane_core::{
     HyperlaneSigner, HyperlaneSignerError, Signature as HyperlaneSignature, H160, H256,
@@ -103,6 +103,8 @@ impl SingletonSigner {
                 warn!(
                     "Failed to send signature back to the signer handle because the channel was closed"
                 );
+            } else {
+                info!("Successfully sent signature back to the signer handle");
             }
         }
     }

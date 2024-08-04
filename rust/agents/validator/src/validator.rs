@@ -182,6 +182,7 @@ impl BaseAgent for Validator {
                     sleep(self.interval).await;
                 }
                 Ok(_) => {
+                    info!("Mailbox has messages");
                     tasks.push(self.run_merkle_tree_hook_sync().await);
                     for checkpoint_sync_task in self.run_checkpoint_submitters().await {
                         tasks.push(checkpoint_sync_task);
@@ -204,6 +205,7 @@ impl BaseAgent for Validator {
 
 impl Validator {
     async fn run_merkle_tree_hook_sync(&self) -> Instrumented<JoinHandle<()>> {
+        info!("Starting message sync");
         let index_settings =
             self.as_ref().settings.chains[self.origin_chain.name()].index_settings();
         let contract_sync = self.merkle_tree_hook_sync.clone();
@@ -226,11 +228,16 @@ impl Validator {
         );
 
         let reorg_period = NonZeroU64::new(self.reorg_period);
-        let tip_tree = self
+        let tip_tree = match self
             .merkle_tree_hook
             .tree(reorg_period)
-            .await
-            .expect("failed to get merkle tree");
+            .await {
+            Ok(tree) => tree,
+            Err(err) => {
+                error!(?err, "Failed to get tip tree");
+                return vec![];
+            }
+        };
         // This function is only called after we have already checked that the
         // merkle tree hook has count > 0, but we assert to be extra sure this is
         // the case.
