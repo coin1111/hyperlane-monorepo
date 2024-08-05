@@ -364,15 +364,8 @@ impl Indexer<H256> for AptosMailboxIndexer {
 #[async_trait]
 impl SequenceAwareIndexer<HyperlaneMessage> for AptosMailboxIndexer {
     async fn latest_sequence_count_and_tip(&self) -> ChainResult<(Option<u32>, u32)> {
-        let tree = self.mailbox.tree(None).await?;
-
-        let count: u32 = tree
-            .count()
-            .try_into()
-            .map_err(ChainCommunicationError::from_other)?;
-
-        let tip = count.checked_sub(1).unwrap_or(0);
-
+        let tip = Indexer::<HyperlaneMessage>::get_finalized_block_number(self as _).await?;
+        let count = Mailbox::count(&self.mailbox, None).await?;
         Ok((Some(count), tip))
     }
 }
@@ -380,15 +373,7 @@ impl SequenceAwareIndexer<HyperlaneMessage> for AptosMailboxIndexer {
 #[async_trait]
 impl SequenceAwareIndexer<H256> for AptosMailboxIndexer {
     async fn latest_sequence_count_and_tip(&self) -> ChainResult<(Option<u32>, u32)> {
-        let tree = self.mailbox.tree(None).await?;
-
-        let count: u32 = tree
-            .count()
-            .try_into()
-            .map_err(ChainCommunicationError::from_other)?;
-
-        let tip = count.checked_sub(1).unwrap_or(0);
-
-        Ok((Some(count), tip))
+        let tip = Indexer::<H256>::get_finalized_block_number(self as _).await?;
+        Ok((Some(1), tip))
     }
 }
