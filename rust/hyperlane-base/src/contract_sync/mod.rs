@@ -47,6 +47,7 @@ where
         label: &'static str,
         mut cursor: Box<dyn ContractSyncCursor<T>>,
     ) -> eyre::Result<()> {
+        info!("Starting ContractSync.sync()");
         let chain_name = self.domain.as_ref();
         let indexed_height = self
             .metrics
@@ -56,15 +57,17 @@ where
             .metrics
             .stored_events
             .with_label_values(&[label, chain_name]);
+        info!("indexed height: {:?}, stored_logs: {:?}", indexed_height.get(), stored_logs.get());
 
         loop {
+            info!("ContractSync.sync() loop. latest_block: {:?}", cursor.latest_block());
             indexed_height.set(cursor.latest_block() as i64);
             let Ok((action, eta)) = cursor.next_action().await else {
                 continue;
             };
             match action {
                 CursorAction::Query(range) => {
-                    debug!(?range, "Looking for for events in index range");
+                    info!(?range, "Looking for for events in index range: {:?}", range);
 
                     let logs = self.indexer.fetch_logs(range.clone()).await
                         .map_err(|err| {
@@ -81,6 +84,7 @@ where
                     let stored = self.db.store_logs(&logs).await?;
                     // Report amount of deliveries stored into db
                     stored_logs.inc_by(stored as u64);
+                    info!("Stored {} logs", stored);
                     // Update cursor
                     cursor.update(logs).await?;
                 }

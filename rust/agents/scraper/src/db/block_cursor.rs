@@ -89,11 +89,11 @@ impl BlockCursor {
                 time_created: ActiveValue::NotSet,
                 height: ActiveValue::Set(height as i64),
             };
-            debug!(?model, "Inserting cursor");
+            info!(?model, "Inserting cursor");
             if let Err(e) = Insert::one(model).exec(&self.db).await {
                 warn!(error = ?e, "Failed to update database with new cursor")
             } else {
-                debug!(cursor = ?*inner, "Updated cursor")
+                info!(cursor = ?*inner, "Updated cursor")
             }
         }
     }

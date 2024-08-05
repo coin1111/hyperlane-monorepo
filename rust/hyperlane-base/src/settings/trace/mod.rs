@@ -1,3 +1,4 @@
+use std::env;
 use eyre::Result;
 pub use span_metrics::TimeSpanLifetime;
 use tracing_subscriber::{

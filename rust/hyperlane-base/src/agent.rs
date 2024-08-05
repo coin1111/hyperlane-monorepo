@@ -8,6 +8,7 @@ use tokio::task::JoinHandle;
 use tracing::{debug_span, instrument::Instrumented, Instrument};
 
 use crate::{metrics::CoreMetrics, settings::Settings};
+use crate::settings::{Level, TracingConfig};
 
 /// Properties shared across all hyperlane agents
 #[derive(Debug)]
@@ -64,9 +65,9 @@ pub async fn agent_main<A: BaseAgent>() -> Result<()> {
     }
 
     let settings = A::Settings::load()?;
-    let core_settings: &Settings = settings.as_ref();
+    let core_settings: &Settings = settings.as_ref() ;
 
-    let metrics = settings.as_ref().metrics(A::AGENT_NAME)?;
+    let metrics = core_settings.metrics(A::AGENT_NAME)?;
     core_settings.tracing.start_tracing(&metrics)?;
     let agent = A::from_settings(settings, metrics.clone()).await?;
     metrics.run_http_server();

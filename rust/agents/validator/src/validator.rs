@@ -124,6 +124,7 @@ impl BaseAgent for Validator {
             info!("Waiting for first message to mailbox");
             sleep(self.interval).await;
         }
+        info!("Mailbox has messages");
 
         tasks.push(self.run_message_sync().await);
         for checkpoint_sync_task in self.run_checkpoint_submitters().await {
@@ -136,6 +137,7 @@ impl BaseAgent for Validator {
 
 impl Validator {
     async fn run_message_sync(&self) -> Instrumented<JoinHandle<Result<()>>> {
+        info!("Starting message sync");
         let index_settings =
             self.as_ref().settings.chains[self.origin_chain.name()].index_settings();
         let contract_sync = self.message_sync.clone();

@@ -63,6 +63,7 @@ impl ValidatorSubmitter {
         mut tree: IncrementalMerkle,
         target_checkpoint: Option<Checkpoint>,
     ) -> Result<()> {
+        info!("Starting checkpoint submitter");
         let mut checkpoint_queue = vec![];
 
         let mut reached_target = false;
@@ -78,6 +79,7 @@ impl ValidatorSubmitter {
                     .set(latest_checkpoint.index as i64);
                 latest_checkpoint
             };
+            info!(index = correctness_checkpoint.index, "Polled latest correctness checkpoint");
 
             // ingest available messages from DB
             while let Some(message) = self
@@ -94,6 +96,7 @@ impl ValidatorSubmitter {
                     checkpoint,
                     message_id,
                 });
+                info!("Pushed to queue, message_id= {:?}, index= {:?}", message_id, checkpoint.index);
 
                 // compare against every queued checkpoint to prevent ingesting past target
                 if checkpoint == correctness_checkpoint {
@@ -117,9 +120,9 @@ impl ValidatorSubmitter {
                         self.checkpoint_syncer
                             .write_checkpoint(&signed_checkpoint)
                             .await?;
-                        debug!(
+                        info!(
                             index = queued_checkpoint.index,
-                            "Signed and submitted checkpoint"
+                            "Signed and written checkpoint"
                         );
 
                         // small sleep before signing next checkpoint to avoid rate limiting
@@ -148,6 +151,7 @@ impl ValidatorSubmitter {
     }
 
     pub(crate) async fn legacy_checkpoint_submitter(self) -> Result<()> {
+        info!("legacy_checkpoint_submitter started");
         // current_index will be None if the validator cannot find
         // a previously signed checkpoint
         let mut current_index = self.checkpoint_syncer.latest_index().await?;
@@ -218,6 +222,10 @@ impl ValidatorSubmitter {
                 self.metrics
                     .legacy_latest_checkpoint_processed
                     .set(signed_checkpoint.value.index as i64);
+                info!(
+                    index = signed_checkpoint.value.index,
+                    "Signed and written latest legacy checkpoint"
+                );
             }
 
             sleep(self.interval).await;

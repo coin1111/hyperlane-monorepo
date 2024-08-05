@@ -15,7 +15,7 @@ use hyperlane_core::{
     SequenceIndexer,
 };
 use tokio::time::sleep;
-use tracing::{debug, warn};
+use tracing::{debug, info, warn};
 
 use crate::contract_sync::eta_calculator::SyncerEtaCalculator;
 
@@ -165,6 +165,7 @@ impl MessageSyncCursor {
                 self.sync_state.next_block = block_number;
                 warn!(block_number, "Rewound to previous known message");
             } else {
+                info!("update next_block to {:?}", self.sync_state.start_block);
                 self.sync_state.next_block = self.sync_state.start_block;
             }
             Ok(())
@@ -272,6 +273,7 @@ impl ContractSyncCursor<HyperlaneMessage> for ForwardMessageSyncCursor {
     }
 
     fn latest_block(&self) -> u32 {
+        info!("ForwardMessageSyncCursor::latest_block");
         self.cursor.sync_state.next_block.saturating_sub(1)
     }
 
@@ -286,6 +288,7 @@ impl ContractSyncCursor<HyperlaneMessage> for ForwardMessageSyncCursor {
             .into_iter()
             .filter(|m| m.0.nonce >= self.cursor.sync_state.next_sequence)
             .collect();
+        info!("ForwardMessageSyncCursor::update");
         self.cursor.update(filtered_logs, prev_nonce).await
     }
 }
@@ -375,6 +378,7 @@ impl BackwardMessageSyncCursor {
             .into_iter()
             .filter(|m| m.0.nonce <= self.cursor.sync_state.next_sequence)
             .collect();
+        info!("BackwardMessageSyncCursor::update");
         self.cursor.update(filtered_logs, prev_sequence).await
     }
 }
@@ -451,10 +455,12 @@ impl ContractSyncCursor<HyperlaneMessage> for ForwardBackwardMessageSyncCursor {
     }
 
     fn latest_block(&self) -> u32 {
+        info!("ForwardBackwardMessageSyncCursor::latest_block, next_block: {:?}", self.forward.cursor.sync_state.next_block);
         self.forward.cursor.sync_state.next_block.saturating_sub(1)
     }
 
     async fn update(&mut self, logs: Vec<(HyperlaneMessage, LogMeta)>) -> Result<()> {
+        info!("will update direction: {:?}", self.direction);
         match self.direction {
             SyncDirection::Forward => self.forward.update(logs).await,
             SyncDirection::Backward => self.backward.update(logs).await,
@@ -593,12 +599,15 @@ where
     }
 
     fn latest_block(&self) -> u32 {
+        info!("RateLimitedContractSyncCursor::latest_block");
         self.sync_state.next_block.saturating_sub(1)
     }
 
     async fn update(&mut self, _: Vec<(T, LogMeta)>) -> Result<()> {
         // Store a relatively conservative view of the high watermark, which should allow a single watermark to be
         // safely shared across multiple cursors, so long as they are running sufficiently in sync
+        info!("RateLimitedContractSyncCursor::update start: {:?}, next: {:?}, chunk: {:?}", self.sync_state.start_block, self.sync_state
+                    .next_block, self.sync_state.chunk_size);
         self.db
             .store_high_watermark(u32::max(
                 self.sync_state.start_block,

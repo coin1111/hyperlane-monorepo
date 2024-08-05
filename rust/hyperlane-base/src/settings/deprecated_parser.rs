@@ -13,10 +13,8 @@ use hyperlane_core::{cfg_unwrap_all, config::*, utils::hex_or_base58_to_h256, Hy
 use serde::Deserialize;
 
 use super::envs::*;
-use crate::settings::{
-    chains::IndexSettings, trace::TracingConfig, ChainConf, ChainConnectionConf,
-    CheckpointSyncerConf, CoreContractAddresses, Settings, SignerConf,
-};
+use crate::settings::{chains::IndexSettings, trace::TracingConfig, ChainConf, ChainConnectionConf, CheckpointSyncerConf, CoreContractAddresses, Settings, SignerConf, Level};
+use crate::settings::fmt::Style;
 
 /// Raw base settings.
 #[derive(Debug, Deserialize)]
@@ -66,7 +64,10 @@ impl FromRawConf<DeprecatedRawSettings, Option<&HashSet<&str>>> for Settings {
         } else {
             Default::default()
         };
-        let tracing = raw.tracing.unwrap_or_default();
+        let tracing = raw.tracing.unwrap_or(TracingConfig{
+            fmt: Style::Compact,
+            level: Level::Debug,
+        });
         let metrics = raw
             .metrics
             .and_then(|port| port.try_into().take_err(&mut err, || cwp + "metrics"))
