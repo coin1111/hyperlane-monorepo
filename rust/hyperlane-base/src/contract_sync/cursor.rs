@@ -86,12 +86,14 @@ impl SyncState {
                 let mut to = from + self.chunk_size;
                 to = u32::min(to, tip);
                 self.next_block = to + 1;
+                debug!("block_range SyncDirection::Forward next_block: {:?}",self.next_block );
                 (from, to)
             }
             SyncDirection::Backward => {
                 let to = self.next_block;
                 let from = to.saturating_sub(self.chunk_size);
                 self.next_block = from.saturating_sub(1);
+                debug!("block_range SyncDirection::Backward next_block: {:?}",self.next_block );
                 (from, to)
             }
         };
@@ -353,6 +355,7 @@ impl BackwardMessageSyncCursor {
             {
                 // It's possible that eth_getLogs dropped logs from this block, therefore we cannot do block_number - 1.
                 self.cursor.sync_state.next_block = block_number;
+                debug!(block=self.cursor.sync_state.next_block, "get_next_range: update next_block");
             }
 
             self.cursor.sync_state.next_sequence =
@@ -405,6 +408,7 @@ impl ForwardBackwardMessageSyncCursor {
         mode: IndexMode,
     ) -> Result<Self> {
         let (count, tip) = indexer.sequence_and_tip().await?;
+        info!("ForwardBackwardMessageSyncCursor::new, count: {:?}, tip: {:?}", count, tip);
         let count = count.ok_or(ChainCommunicationError::from_other_str(
             "Failed to query message count",
         ))?;

@@ -34,7 +34,6 @@
       <env name="HYP_BASE_REORGPERIOD" value="0" />
       <env name="HYP_BASE_RUST_BACKTRACE" value="full" />
       <env name="HYP_BASE_VALIDATOR_KEY" value="0xb25d6937002ecd4d79c7bdfddc0053febc8896f2109e96c45bf69efd84544cd5" />
-      <env name="RUST_LOG" value="debug" />
     </envs>
     <option name="emulateTerminal" value="true" />
     <option name="channel" value="DEFAULT" />
