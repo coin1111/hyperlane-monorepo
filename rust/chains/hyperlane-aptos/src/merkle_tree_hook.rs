@@ -15,7 +15,7 @@ use hyperlane_core::{HyperlaneMessage, Indexed};
 use std::num::NonZeroU64;
 use std::ops::RangeInclusive;
 use std::str::FromStr;
-use tracing::instrument;
+use tracing::{debug, instrument};
 
 #[async_trait]
 impl MerkleTreeHook for AptosMailbox {
@@ -78,6 +78,7 @@ impl Indexer<MerkleTreeInsertion> for AptosMerkleTreeHookIndexer {
         &self,
         range: RangeInclusive<u32>,
     ) -> ChainResult<Vec<(Indexed<MerkleTreeInsertion>, LogMeta)>> {
+        debug!(?range, "AptosMerkleTreeHookIndexer::Indexer<MerkleTreeInsertion>::fetch_logs");
         let messages = self.0.fetch_logs(range).await?;
         let merkle_tree_insertions = messages
             .into_iter()

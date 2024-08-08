@@ -113,7 +113,7 @@ impl HyperlaneProvider for AptosHpProvider {
             .map_err(ChainCommunicationError::from_other)?;
         let mut version = state.state().version;
         let mut block_depth = 0;
-        while version > 0 && block_depth > 100 {
+        while version > 0 && block_depth > 1000 {
             let block = self
                 .aptos_client
                 .get_block_by_version(version, false)

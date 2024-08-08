@@ -62,7 +62,7 @@ impl ProcessorExt for MessageProcessor {
         // nonce.
         // Scan until we find next nonce without delivery confirmation.
         if let Some(msg) = self.try_get_unprocessed_message()? {
-            debug!(?msg, "Processor working on message");
+            debug!(?msg, "Processor working on message tick");
             let destination = msg.destination;
 
             // Skip if not whitelisted.

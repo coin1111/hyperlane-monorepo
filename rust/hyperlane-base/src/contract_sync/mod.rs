@@ -56,7 +56,7 @@ where
     /// Sync logs and write them to the LogStore
     #[tracing::instrument(name = "ContractSync", fields(domain=self.domain().name()), skip(self, cursor))]
     pub async fn sync(&self, label: &'static str, mut cursor: Box<dyn ContractSyncCursor<T>>) {
-        info!("Starting ContractSync.sync()");
+        info!("Starting ContractSync.sync() with label: {:?}", label);
         let chain_name = self.domain.as_ref();
         let indexed_height = self
             .metrics
@@ -90,7 +90,7 @@ where
                     let logs = match self.indexer.fetch_logs(range.clone()).await {
                         Ok(logs) => logs,
                         Err(err) => {
-                            warn!(?err, "Error fetching logs");
+                            warn!(?range, ?err, "Error fetching logs");
                             break SLEEP_DURATION;
                         }
                     };

@@ -343,6 +343,7 @@ impl Indexer<H256> for AptosMailboxIndexer {
         &self,
         range: RangeInclusive<u32>,
     ) -> ChainResult<Vec<(Indexed<H256>, LogMeta)>> {
+        debug!(?range, "AptosMailboxIndexer::Indexer<H256>::fetch_logs");
         get_filtered_events::<H256, MsgProcessEventData>(
             &self.aptos_client,
             self.package_address,
