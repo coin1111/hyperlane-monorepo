@@ -319,6 +319,7 @@ impl Indexer<HyperlaneMessage> for AptosMailboxIndexer {
         &self,
         range: RangeInclusive<u32>,
     ) -> ChainResult<Vec<(Indexed<HyperlaneMessage>, LogMeta)>> {
+        debug!(?range, "AptosMailboxIndexer::Indexer<HyperlaneMessage>::fetch_logs");
         get_filtered_events::<HyperlaneMessage, DispatchEventData>(
             &self.aptos_client,
             self.package_address,

@@ -83,13 +83,13 @@ impl TryInto<HyperlaneMessage> for DispatchEventData {
 /// Move Value Data of GasPayment Event
 pub struct GasPaymentEventData {
     /// dest domain the gas is paid for
-    pub dest_domain: String,
+    pub dest_domain: u32,
     /// hyperlane message id
     pub message_id: String,
     /// gas amount
     pub gas_amount: String,
     /// quoted gas payment
-    pub required_amount: String,
+    pub required_payment: String,
     /// block number
     pub block_height: String,
     /// hash of transaction
@@ -108,9 +108,9 @@ impl TryInto<InterchainGasPayment> for GasPaymentEventData {
     type Error = ChainCommunicationError;
     fn try_into(self) -> Result<InterchainGasPayment, Self::Error> {
         Ok(InterchainGasPayment {
-            destination: self.dest_domain.parse::<u32>().unwrap(),
+            destination: self.dest_domain,
             message_id: utils::convert_hex_string_to_h256(&self.message_id).unwrap(),
-            payment: U256::from_str(&self.required_amount)
+            payment: U256::from_str(&self.required_payment)
                 .map_err(ChainCommunicationError::from_other)
                 .unwrap(),
             gas_amount: U256::from_str(&self.gas_amount)
