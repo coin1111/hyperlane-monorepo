@@ -210,22 +210,26 @@ async fn prepare_task(
         for (op, prepare_result) in batch.into_iter().zip(res.into_iter()) {
             match prepare_result {
                 PendingOperationResult::Success => {
-                    debug!(?op, "Operation prepared");
+                    debug!(?op, "Operation prepared. PendingOperationResult::Success");
                     metrics.ops_prepared.inc();
                     // TODO: push multiple messages at once
                     submit_queue.push(op).await;
                 }
                 PendingOperationResult::NotReady => {
+                    debug!(?op, "Operation prepared. PendingOperationResult::NotReady");
                     prepare_queue.push(op).await;
                 }
                 PendingOperationResult::Reprepare => {
+                    debug!(?op, "Operation prepared. PendingOperationResult::Reprepare");
                     metrics.ops_failed.inc();
                     prepare_queue.push(op).await;
                 }
                 PendingOperationResult::Drop => {
+                    debug!(?op, "Operation prepared. PendingOperationResult::Drop");
                     metrics.ops_dropped.inc();
                 }
                 PendingOperationResult::Confirm => {
+                    debug!(?op, "Operation prepared. PendingOperationResult::Confirm");
                     confirm_queue.push(op).await;
                 }
             }

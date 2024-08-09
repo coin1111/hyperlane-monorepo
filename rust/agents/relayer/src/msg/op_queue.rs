@@ -4,7 +4,7 @@ use derive_new::new;
 use hyperlane_core::MpmcReceiver;
 use prometheus::{IntGauge, IntGaugeVec};
 use tokio::sync::Mutex;
-use tracing::{info, instrument};
+use tracing::{debug, info, instrument};
 
 use crate::server::MessageRetryRequest;
 
@@ -27,6 +27,7 @@ impl OpQueue {
     /// Push an element onto the queue and update metrics
     #[instrument(skip(self), ret, fields(queue_label=%self.queue_metrics_label), level = "debug")]
     pub async fn push(&self, op: QueueOperation) {
+        debug!(operation = %op, queue_label = %self.queue_metrics_label, "Pushing OpQueue operation");
         // increment the metric before pushing onto the queue, because we lose ownership afterwards
         self.get_operation_metric(op.as_ref()).inc();
 
