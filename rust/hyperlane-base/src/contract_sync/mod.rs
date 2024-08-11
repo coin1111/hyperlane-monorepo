@@ -12,7 +12,7 @@ use hyperlane_core::{
 };
 pub use metrics::ContractSyncMetrics;
 use tokio::time::sleep;
-use tracing::{debug, info, warn};
+use tracing::{info, warn};
 
 use crate::settings::IndexSettings;
 

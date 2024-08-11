@@ -4,7 +4,6 @@ use ethers::prelude::{AwsSigner, LocalWallet};
 use ethers::utils::hex;
 use ethers::utils::hex::ToHex;
 use eyre::{bail, Context, Report};
-use hyperlane_aptos::signers;
 use hyperlane_core::H256;
 use hyperlane_sealevel::Keypair;
 use rusoto_core::Region;
@@ -169,10 +168,7 @@ impl BuildableWithSignerConf for hyperlane_aptos::signers::AptosSigner {
             let secret = SecretKey::from_bytes(key.as_bytes())
                 .context("Invalid aptos ed25519 secret key")?;
             use hyperlane_aptos::signers::AptosSigner;
-            Ok(AptosSigner::new(
-                Keypair::from_bytes(&ed25519_dalek::Keypair::from(secret).to_bytes())
-                    .context("Unable to create Keypair")?,
-            ))
+            Ok(AptosSigner::new(secret)?)
         } else {
             bail!(format!("{conf:?} key is not supported by aptos"));
         }
@@ -181,6 +177,6 @@ impl BuildableWithSignerConf for hyperlane_aptos::signers::AptosSigner {
 
 impl ChainSigner for hyperlane_aptos::signers::AptosSigner {
     fn address_string(&self) -> String {
-        hex::encode(solana_sdk::signer::Signer::pubkey(&self.0))
+        hex::encode(solana_sdk::signer::Signer::pubkey(&self.keypair))
     }
 }
