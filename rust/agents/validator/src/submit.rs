@@ -202,7 +202,10 @@ impl ValidatorSubmitter {
                     checkpoint,
                     message_id,
                 });
-                info!("Pushed to queue, message_id= {:?}, index= {:?}", message_id, checkpoint.index);
+                info!(
+                    "Pushed to queue, message_id= {:?}, index= {:?}",
+                    message_id, checkpoint.index
+                );
             } else {
                 // If we haven't yet indexed the next merkle tree insertion but know that
                 // it will soon exist (because we know the correctness checkpoint), wait a bit and

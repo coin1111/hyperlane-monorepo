@@ -78,7 +78,10 @@ impl Indexer<MerkleTreeInsertion> for AptosMerkleTreeHookIndexer {
         &self,
         range: RangeInclusive<u32>,
     ) -> ChainResult<Vec<(Indexed<MerkleTreeInsertion>, LogMeta)>> {
-        debug!(?range, "AptosMerkleTreeHookIndexer::Indexer<MerkleTreeInsertion>::fetch_logs");
+        debug!(
+            ?range,
+            "AptosMerkleTreeHookIndexer::Indexer<MerkleTreeInsertion>::fetch_logs"
+        );
         let messages = self.0.fetch_logs(range).await?;
         let merkle_tree_insertions = messages
             .into_iter()

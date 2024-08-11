@@ -66,10 +66,17 @@ where
             .metrics
             .stored_events
             .with_label_values(&[label, chain_name]);
-        info!("indexed height: {:?}, stored_logs: {:?}", indexed_height.get(), stored_logs.get());
+        info!(
+            "indexed height: {:?}, stored_logs: {:?}",
+            indexed_height.get(),
+            stored_logs.get()
+        );
 
         loop {
-            info!("ContractSync.sync() loop. latest_block: {:?}", cursor.latest_queried_block());
+            info!(
+                "ContractSync.sync() loop. latest_block: {:?}",
+                cursor.latest_queried_block()
+            );
             indexed_height.set(cursor.latest_queried_block() as i64);
 
             let (action, eta) = match cursor.next_action().await {
@@ -119,7 +126,11 @@ where
                         warn!(?err, "Error updating cursor");
                         break SLEEP_DURATION;
                     };
-                    info!("Updated cursor, latest block: {:?}, range: {:?}", cursor.latest_queried_block(), range);
+                    info!(
+                        "Updated cursor, latest block: {:?}, range: {:?}",
+                        cursor.latest_queried_block(),
+                        range
+                    );
                     break SLEEP_DURATION;
                 },
                 CursorAction::Sleep(duration) => duration,

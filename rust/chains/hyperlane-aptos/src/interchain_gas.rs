@@ -3,7 +3,11 @@
 use std::ops::RangeInclusive;
 
 use async_trait::async_trait;
-use hyperlane_core::{ChainCommunicationError, ChainResult, ContractLocator, HyperlaneChain, HyperlaneContract, HyperlaneDomain, HyperlaneProvider, Indexed, Indexer, InterchainGasPaymaster, InterchainGasPayment, LogMeta, SequenceAwareIndexer, H256, HyperlaneMessage, Mailbox};
+use hyperlane_core::{
+    ChainCommunicationError, ChainResult, ContractLocator, HyperlaneChain, HyperlaneContract,
+    HyperlaneDomain, HyperlaneMessage, HyperlaneProvider, Indexed, Indexer, InterchainGasPaymaster,
+    InterchainGasPayment, LogMeta, Mailbox, SequenceAwareIndexer, H256,
+};
 use tracing::{debug, info, instrument};
 
 use crate::{get_filtered_events, AptosHpProvider, ConnectionConf, GasPaymentEventData};
@@ -80,7 +84,10 @@ impl Indexer<InterchainGasPayment> for AptosInterchainGasPaymasterIndexer {
         &self,
         range: RangeInclusive<u32>,
     ) -> ChainResult<Vec<(Indexed<InterchainGasPayment>, LogMeta)>> {
-        debug!(?range, "AptosInterchainGasPaymasterIndexer::Indexer<InterchainGasPayment>::fetch_logs");
+        debug!(
+            ?range,
+            "AptosInterchainGasPaymasterIndexer::Indexer<InterchainGasPayment>::fetch_logs"
+        );
         get_filtered_events::<InterchainGasPayment, GasPaymentEventData>(
             &self.aptos_client,
             self.package_address,

@@ -228,10 +228,7 @@ impl Validator {
         );
 
         let reorg_period = NonZeroU64::new(self.reorg_period);
-        let tip_tree = match self
-            .merkle_tree_hook
-            .tree(reorg_period)
-            .await {
+        let tip_tree = match self.merkle_tree_hook.tree(reorg_period).await {
             Ok(tree) => tree,
             Err(err) => {
                 error!(?err, "Failed to get tip tree");
