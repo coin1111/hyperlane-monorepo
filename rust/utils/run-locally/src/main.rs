@@ -32,7 +32,7 @@ use crate::{
     aptos::*,
     config::Config,
     ethereum::start_anvil,
-    invariants::{termination_invariants_met, SOL_MESSAGES_EXPECTED},
+    invariants::{termination_invariants_met, APTOS_MESSAGES_EXPECTED},
     metrics::agent_balance_sum,
     solana::*,
     utils::{concat_path, make_static, stop_child, AgentHandles, ArbitraryData, TaskHandle},
@@ -343,46 +343,19 @@ fn main() -> ExitCode {
 
     sleep(Duration::from_secs(5));
 
-    // Send half the kathy messages before starting the rest of the agents
-    let kathy_env_single_insertion = Program::new("yarn")
-        .working_dir(INFRA_PATH)
-        .cmd("kathy")
-        .arg("messages", (config.kathy_messages / 4).to_string())
-        .arg("timeout", "1000");
-    // kathy_env_single_insertion.clone().run().join();
-
-    let kathy_env_zero_insertion = Program::new("yarn")
-        .working_dir(INFRA_PATH)
-        .cmd("kathy")
-        .arg(
-            "messages",
-            (ZERO_MERKLE_INSERTION_KATHY_MESSAGES / 2).to_string(),
-        )
-        .arg("timeout", "1000")
-        // replacing the `aggregationHook` with the `interchainGasPaymaster` means there
-        // is no more `merkleTreeHook`, causing zero merkle insertions to occur.
-        .arg("default-hook", "interchainGasPaymaster");
-    // kathy_env_zero_insertion.clone().run().join();
-
-    let kathy_env_double_insertion = Program::new("yarn")
-        .working_dir(INFRA_PATH)
-        .cmd("kathy")
-        .arg("messages", (config.kathy_messages / 4).to_string())
-        .arg("timeout", "1000")
-        // replacing the `protocolFees` required hook with the `merkleTreeHook`
-        // will cause double insertions to occur, which should be handled correctly
-        .arg("required-hook", "merkleTreeHook");
-    // kathy_env_double_insertion.clone().run().join();
-
     // spawn the rest of the validators
     for (i, validator_env) in validator_envs.into_iter().enumerate().skip(1) {
         let validator = validator_env.spawn(make_static(format!("VL{}", 1 + i)));
         state.push_agent(validator);
     }
 
+    for _i in 0..(APTOS_MESSAGES_EXPECTED / 4) {
+        aptos_send_messages().join();
+    }
+
     state.push_agent(relayer_env.spawn("RLY"));
 
-    for _i in 0..5 {
+    for _i in 0..(APTOS_MESSAGES_EXPECTED / 4) {
         aptos_send_messages().join();
     }
 
