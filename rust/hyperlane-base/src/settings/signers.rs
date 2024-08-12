@@ -177,6 +177,6 @@ impl BuildableWithSignerConf for hyperlane_aptos::signers::AptosSigner {
 
 impl ChainSigner for hyperlane_aptos::signers::AptosSigner {
     fn address_string(&self) -> String {
-        hex::encode(solana_sdk::signer::Signer::pubkey(&self.keypair))
+        self.address.clone()
     }
 }

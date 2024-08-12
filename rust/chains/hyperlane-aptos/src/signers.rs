@@ -5,6 +5,7 @@ use aptos_sdk::types::transaction::authenticator::AuthenticationKey;
 use ed25519_dalek::SecretKey;
 use hyperlane_core::ChainCommunicationError;
 use hyperlane_core::ChainResult;
+use solana_sdk::msg;
 use solana_sdk::signer::keypair::Keypair;
 
 #[derive(Debug)]
@@ -27,7 +28,7 @@ impl AptosSigner {
         // secret -> ed25519_dalek::Keypair -> solana_sdk::signer::keypair::Keypair
         let keypair = Keypair::from_bytes(&ed25519_dalek::Keypair::from(secret).to_bytes())
             .map_err(|err| {
-                println!("Error: {:?}", err);
+                msg!("{}", err);
                 ChainCommunicationError::from_other_str("Cannot create keypair")
             })?;
 
