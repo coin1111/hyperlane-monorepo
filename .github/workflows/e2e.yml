@@ -22,11 +22,6 @@ jobs:
   e2e:
     runs-on: ubuntu-latest
     steps:
-      - name: Update package list
-        run: sudo apt-get update
-
-      - name: Install libudev-dev
-        run: sudo apt-get install -y libudev-dev libssl-dev libpq-dev
 
       - uses: actions/setup-node@v3
         with:
@@ -71,6 +66,10 @@ jobs:
             **/node_modules
             .yarn/cache
           key: ${{ runner.os }}-yarn-cache-${{ hashFiles('./yarn.lock') }}
+      - name: Update package list
+        run: sudo apt-get update
+      - name: Install libudev-dev
+        run: sudo apt-get install -y libudev-dev libssl-dev libpq-dev
       - name: build test
         run: cargo build --release --bin run-locally-aptos
       - name: run test
