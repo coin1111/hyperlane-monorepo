@@ -14,10 +14,6 @@ env:
   CARGO_TERM_COLOR: always
   RUST_BACKTRACE: full
 
-defaults:
-  run:
-    working-directory: ./rust
-
 jobs:
   e2e:
     runs-on: ubuntu-latest
