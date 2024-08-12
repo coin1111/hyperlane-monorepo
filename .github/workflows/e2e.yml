@@ -22,7 +22,6 @@ jobs:
   e2e:
     runs-on: ubuntu-latest
     steps:
-steps:
       - name: Update package list
         run: sudo apt-get update
 
