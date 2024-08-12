@@ -22,6 +22,13 @@ jobs:
   e2e:
     runs-on: ubuntu-latest
     steps:
+steps:
+      - name: Update package list
+        run: sudo apt-get update
+
+      - name: Install libudev-dev
+        run: sudo apt-get install -y libudev-dev libssl-dev libpq-dev
+
       - uses: actions/setup-node@v3
         with:
           node-version: 16
@@ -66,9 +73,9 @@ jobs:
             .yarn/cache
           key: ${{ runner.os }}-yarn-cache-${{ hashFiles('./yarn.lock') }}
       - name: build test
-        run: cargo build --release --bin run-locally
+        run: cargo build --release --bin run-locally-aptos
       - name: run test
-        run: ./target/release/run-locally
+        run: ./target/release/run-locally-aptos
         env:
           HYP_BASE_LOCAL_BIN: '/home/runner/.local/bin'
           E2E_CI_MODE: 'true'

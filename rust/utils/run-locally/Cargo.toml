@@ -1,7 +1,7 @@
 cargo-features = ["workspace-inheritance"]
 
 [package]
-name = "run-locally"
+name = "run-locally-aptos"
 documentation.workspace = true
 edition.workspace = true
 homepage.workspace = true
